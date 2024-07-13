@@ -15,6 +15,7 @@ TASK_TYPE="multi_choice_qa"
 DATASET_PATH="/content/drive/MyDrive/llm_trust/bank.csv"
 USE_COT=true # use cot or not
 TEMPERATURE=0.0
+TOP_K=1
 
 #############################################################
 # set time stamp to differentiate the output file
@@ -29,7 +30,7 @@ if [ "$USE_COT" = true ] ; then
 fi
 
 
-python query_top_k.py \
+python ../query_top_k.py \
    --dataset_name  $DATASET_NAME \
    --data_path $DATASET_PATH \
    --output_file  $RESULT_FILE \
@@ -39,11 +40,12 @@ python query_top_k.py \
    --sampling_type $SAMPLING_TYPE \
    --num_ensemble $NUM_ENSEMBLE \
    --temperature_for_ensemble $TEMPERATURE \
+   --num_K $TOP_K \
    $USE_COT_FLAG
 
 
 # uncomment following lines to run test and visualization
-python extract_answers.py \
+python ../extract_answers.py \
    --input_file $RESULT_FILE \
    --model_name  $MODEL_NAME \
    --dataset_name  $DATASET_NAME \
@@ -55,7 +57,7 @@ python extract_answers.py \
 
 RESULT_FILE_PROCESSED=$(echo $RESULT_FILE | sed 's/\.json$/_processed.json/')
 
-python vis_aggregated_conf.py \
+python ../vis_aggregated_conf.py \
     --input_file $RESULT_FILE_PROCESSED \
     --model_name  $MODEL_NAME \
     --dataset_name  $DATASET_NAME \
