@@ -118,6 +118,21 @@ def load_dataset(dataset_name: str, task_type: str, data_path: str):
         with open(data_path, 'r') as f:
             qa_data = json.load(f)
             
+    elif "financial_phrasebank" in dataset_name.lower():
+        test_df = pd.read_csv(data_path)
+        for _, row in test_df.iterrows():
+            question = row['sentence']
+            options = ["negative", "neutral", "positive"]
+            correct_answer = row['label']
+            formatted_question = question + '\n' + 'Options: '
+            for idx, option in enumerate(options):
+                formatted_question += character[idx] + " " + option + "  "
+            value = {
+                'answer': correct_answer,
+                'options': options
+            }
+            qa_data[formatted_question] = value
+    
     else:
         raise ValueError(f"{dataset_name} not supported")
     
