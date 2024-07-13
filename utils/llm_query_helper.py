@@ -22,7 +22,7 @@ def calculate_result_per_question(model_name, question, prompt, final_result, er
     while not req_success and max_req_count > 0:
         try:
             if model_name.lower() == 'chatgpt':
-                response = openai.ChatCompletion.create(model="gpt-3.5-turbo",
+                response = openai.ChatCompletion.create(model="gpt-3.5-turbo-1106",
                                             messages=[{'role':'user','content':prompt}],									
                                             temperature = temperature,
                                         max_tokens=max_tokens)
