@@ -9,7 +9,7 @@ CONFIDENCE_TYPE="${PROMPT_TYPE}_${SAMPLING_TYPE}_${NUM_ENSEMBLE}"
 # TODO uncomment following lines to run on different settings
 #############################################################
 
-DATASET_NAME="Professional_Law"
+DATASET_NAME="Financial_PhraseBank"
 MODEL_NAME="chatgpt"
 TASK_TYPE="multi_choice_qa"
 DATASET_PATH="/content/drive/MyDrive/llm_trust/bank.csv"
