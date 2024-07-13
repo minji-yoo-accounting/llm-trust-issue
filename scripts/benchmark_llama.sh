@@ -15,6 +15,7 @@ TASK_TYPE="multi_choice_qa"
 DATASET_PATH="/content/drive/MyDrive/llm_trust/bank.csv"
 USE_COT=false # use cot or not
 TEMPERATURE=0.0
+TOP_K=1
 
 #############################################################
 # set time stamp to differentiate the output file
@@ -39,6 +40,7 @@ python query_top_k.py \
    --sampling_type $SAMPLING_TYPE \
    --num_ensemble $NUM_ENSEMBLE \
    --temperature_for_ensemble $TEMPERATURE \
+   --num_K $TOP_K \
    $USE_COT_FLAG
 
 
