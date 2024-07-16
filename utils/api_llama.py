@@ -16,7 +16,6 @@ import urllib.request
 import zipfile
 
 
-
 # Load model directly
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
@@ -42,8 +41,6 @@ def LlamaChatCompletion(model_name, prompt, max_tokens):
 
     # Decode the output
     decoded_outputs = tokenizer.batch_decode(outputs.sequences, skip_special_tokens=True)
-
-    pdb.set_trace()
 
     return decoded_outputs
     
