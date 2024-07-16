@@ -14,7 +14,6 @@ from utils.dataset_loader import load_dataset
 from utils.llm_query_helper import calculate_result_per_question
 from argparse import ArgumentParser
 
-openai_key = "your_openai_key" # TODO: replace with your openai key
 
 time_stamp = time.strftime("%Y-%m-%d_%H-%M")
 
@@ -151,7 +150,7 @@ sample_hint_prompt = generate_misleading_hint(hint_type="hint1" if args.num_ense
 sample_prompt = generate_prompt(prompt_description, question=sample_question, misleading_hint=sample_hint_prompt)
 print("\n-------\n", sample_prompt, "\n-------\n")
 
-pdb.set_trace()
+# pdb.set_trace()
 
 # construct the answer sheet
 if os.path.exists(args.output_file):
