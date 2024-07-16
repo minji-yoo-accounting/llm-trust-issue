@@ -163,7 +163,7 @@ sample_hint_prompt = generate_misleading_hint(hint_type="hint1" if args.num_ense
 sample_prompt = generate_prompt(prompt_description, question=sample_question, misleading_hint=sample_hint_prompt)
 print("\n-------\n", sample_prompt, "\n-------\n")
 
-pdb.set_trace()
+#pdb.set_trace()
 
 # construct the answer sheet
 if os.path.exists(args.output_file):
