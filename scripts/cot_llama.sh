@@ -31,7 +31,7 @@ if [ "$USE_COT" = true ] ; then
 fi
 
 
-python ../query_top_k.py \
+python3 ../query_vanilla_or_cot.py \
    --dataset_name  $DATASET_NAME \
    --data_path $DATASET_PATH \
    --output_file  $RESULT_FILE \
@@ -46,7 +46,7 @@ python ../query_top_k.py \
 
 
 # uncomment following lines to run test and visualization
-python ../extract_answers.py \
+python3 ../extract_answers.py \
    --input_file $RESULT_FILE \
    --model_name  $MODEL_NAME \
    --dataset_name  $DATASET_NAME \
@@ -58,7 +58,7 @@ python ../extract_answers.py \
 
 RESULT_FILE_PROCESSED=$(echo $RESULT_FILE | sed 's/\.json$/_processed.json/')
 
-python ../vis_aggregated_conf.py \
+python3 ../vis_aggregated_conf.py \
     --input_file $RESULT_FILE_PROCESSED \
     --model_name  $MODEL_NAME \
     --dataset_name  $DATASET_NAME \
