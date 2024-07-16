@@ -21,21 +21,31 @@ import zipfile
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
 def LlamaChatCompletion(model_name, prompt, max_tokens):
-    # os.environ['CUDA_VISIBLE_DEVICES'] = "5"
-    # model_name = "daryl149/llama-2-7b-chat-hf"
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    print(f"Using device: {device}")
+
+    # Load the tokenizer and model
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     model = AutoModelForCausalLM.from_pretrained(model_name).to(device)
 
-    input_ids = tokenizer(prompt, return_tensors="pt").input_ids.to(device) 
-    outputs = model.generate(input_ids=input_ids,
-                             max_new_tokens=max_tokens,return_dict_in_generate=True, output_scores=True, output_hidden_states=True)
-    
-    tokenizer.batch_decode(outputs, skip_special_tokens=True)
-    
+    # Tokenize the input prompt
+    input_ids = tokenizer(prompt, return_tensors="pt").input_ids.to(device)
+
+    # Generate the output
+    outputs = model.generate(
+        input_ids=input_ids,
+        max_new_tokens=max_tokens,
+        return_dict_in_generate=True,
+        output_scores=True,
+        output_hidden_states=True
+    )
+
+    # Decode the output
+    decoded_outputs = tokenizer.batch_decode(outputs.sequences, skip_special_tokens=True)
+
     pdb.set_trace()
-    
-    return outputs
+
+    return decoded_outputs
     
     # logit=1
     # logit_layer=torch.ones(1,33)
