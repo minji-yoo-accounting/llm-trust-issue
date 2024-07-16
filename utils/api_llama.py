@@ -31,5 +31,5 @@ def LlamaChatCompletion(model_name, prompt, max_tokens):
     # Decode the output
     tokenizer.batch_decode(outputs, skip_special_tokens=True)
     
-    return decoded_outputs
+    return outputs
     
