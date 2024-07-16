@@ -1,6 +1,7 @@
 import os, pdb
 from openai import OpenAI
-
+from utils.api_llama import LlamaChatCompletion
+                
 
 #calculate_result_per_question('vicuna', 'a', 'a', {}, {}, {}, 'hint0', 'multi', False)
 def calculate_result_per_question(model_name, question, prompt, final_result, error_dataset, qa_dataset, hint_type, task_type, use_cot, temperature=0.0):
@@ -67,8 +68,6 @@ def calculate_result_per_question(model_name, question, prompt, final_result, er
                 orginal_anser = VicunaChatCompletion(prompt)
                 
             elif model_name.lower() == 'llama_2_7b_chat_hf':
-                #pdb.set_trace()
-                from utils.api_llama import LlamaChatCompletion
                 model_name = "meta-llama/Llama-2-7b-hf"
                 orginal_anser = LlamaChatCompletion(model_name, prompt, max_tokens=max_tokens)
                 
