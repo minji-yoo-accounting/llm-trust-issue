@@ -24,7 +24,7 @@ TASK_TYPE="multi_choice_qa"
 DATASET_PATH="C:/Users/minjiyoo/Desktop/llm-uncertainty/bank.csv"
 USE_COT=false # use cot or not
 TEMPERATURE=0.7
-TOP_K=4
+TOP_K=3
 
 
 #############################################################
