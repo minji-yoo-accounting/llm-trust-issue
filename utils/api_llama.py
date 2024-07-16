@@ -10,7 +10,7 @@ import transformers
 from tqdm import tqdm
 import argparse
 import pandas as pd
-
+import torch
 import ssl
 import urllib.request
 import zipfile
@@ -21,12 +21,13 @@ import zipfile
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
 def LlamaChatCompletion(model_name, prompt, max_tokens):
-    os.environ['CUDA_VISIBLE_DEVICES'] = "5"
+    # os.environ['CUDA_VISIBLE_DEVICES'] = "5"
     # model_name = "daryl149/llama-2-7b-chat-hf"
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     tokenizer = AutoTokenizer.from_pretrained(model_name)
-    model = AutoModelForCausalLM.from_pretrained(model_name).to("cuda")
+    model = AutoModelForCausalLM.from_pretrained(model_name).to("device")
 
-    input_ids = tokenizer(prompt, return_tensors="pt").input_ids.to("cuda") 
+    input_ids = tokenizer(prompt, return_tensors="pt").input_ids.to("device") 
     outputs = model.generate(input_ids=input_ids,
                              max_new_tokens=max_tokens,return_dict_in_generate=True, output_scores=True, output_hidden_states=True)
     
