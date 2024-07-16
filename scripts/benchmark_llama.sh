@@ -32,7 +32,7 @@ if [ "$USE_COT" = true ] ; then
 fi
 
 
-python3 ../query_top_k.py \
+python3 ../query_vanilla_or_cot.py \
    --dataset_name  $DATASET_NAME \
    --data_path $DATASET_PATH \
    --output_file  $RESULT_FILE \
