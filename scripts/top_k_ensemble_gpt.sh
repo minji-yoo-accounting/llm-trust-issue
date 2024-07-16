@@ -1,5 +1,10 @@
 #!/bin/bash
 
+#set this in bash terminal
+#export OPENAI_API_KEY="sk-proj-zqqDK5fZz9EyBIhLaaXcT3BlbkFJOM95Mer9tVvCs4qkxYfQ"
+#echo $OPENAI_API_KEY
+
+
 # prompt strategy = top-k
 # sampling strategy = self-random ->  by setting NUM_ENSEMBLE to decide the number of samples we want to draw from a given question
 # aggregator = consistency / avg-conf / pair-rank (all of them will be automatically computed in the same script)
@@ -16,7 +21,7 @@ CONFIDENCE_TYPE="${PROMPT_TYPE}_${SAMPLING_TYPE}_${NUM_ENSEMBLE}"
 DATASET_NAME="Financial_PhraseBank"
 MODEL_NAME="chatgpt"
 TASK_TYPE="multi_choice_qa"
-DATASET_PATH="/content/drive/MyDrive/llm_trust/bank.csv"
+DATASET_PATH="C:/Users/minjiyoo/Desktop/llm-uncertainty/bank.csv"
 USE_COT=false # use cot or not
 TEMPERATURE=0.7
 TOP_K=4
@@ -34,7 +39,7 @@ if [ "$USE_COT" = true ] ; then
     USE_COT_FLAG="--use_cot"
 fi
 
-python ../query_top_k.py \
+python3 ../query_top_k.py \
    --dataset_name  $DATASET_NAME \
    --data_path $DATASET_PATH \
    --output_file  $RESULT_FILE \
@@ -49,7 +54,7 @@ python ../query_top_k.py \
 
 
 # uncomment following lines to run test and visualization
-python ../extract_answers.py \
+python3 ../extract_answers.py \
    --input_file $RESULT_FILE \
    --model_name  $MODEL_NAME \
    --dataset_name  $DATASET_NAME \
@@ -62,7 +67,7 @@ python ../extract_answers.py \
 
 RESULT_FILE_PROCESSED=$(echo $RESULT_FILE | sed 's/\.json$/_processed.json/')
 
-python ../vis_aggregated_conf_top_k.py \
+python3 ../vis_aggregated_conf_top_k.py \
     --input_file $RESULT_FILE_PROCESSED \
     --model_name  $MODEL_NAME \
     --dataset_name  $DATASET_NAME \

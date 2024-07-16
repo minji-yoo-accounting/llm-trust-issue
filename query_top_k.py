@@ -14,7 +14,7 @@ from utils.dataset_loader import load_dataset
 from utils.llm_query_helper import calculate_result_per_question
 from argparse import ArgumentParser
 
-openai_key = "your_openai_key" # TODO: replace with your openai key
+  
 
 time_stamp = time.strftime("%Y-%m-%d_%H-%M")
 
@@ -202,7 +202,7 @@ for idx, question in enumerate(qa_data.keys()):
             prompt = generate_prompt(prompt_description, question, misleading_hint)
             print(f"using {hint_type}, prompt: \n{prompt}")
             
-            final_result, error_dataset = calculate_result_per_question(args.model_name, question, prompt, final_result, error_dataset, qa_data, hint_type, args.task_type, args.use_cot, openai_key=openai_key, temperature=args.temperature_for_ensemble)
+            final_result, error_dataset = calculate_result_per_question(args.model_name, question, prompt, final_result, error_dataset, qa_data, hint_type, args.task_type, args.use_cot, temperature=args.temperature_for_ensemble)
             
             final_result[question][hint_type]["hint_entry"] = misleading_hint
         
@@ -210,7 +210,7 @@ for idx, question in enumerate(qa_data.keys()):
         for ith in range(args.num_ensemble):
             prompt = generate_prompt(prompt_description, question, misleading_hint="")
             hint_type = f"trail_{ith}"
-            final_result, error_dataset = calculate_result_per_question(args.model_name, question, prompt, final_result, error_dataset, qa_data, hint_type, args.task_type, args.use_cot, openai_key=openai_key, temperature=args.temperature_for_ensemble)
+            final_result, error_dataset = calculate_result_per_question(args.model_name, question, prompt, final_result, error_dataset, qa_data, hint_type, args.task_type, args.use_cot, temperature=args.temperature_for_ensemble)
     
     if idx % 5 == 0:
         end_time = time.time()

@@ -1,3 +1,5 @@
+#!/bin/bash
+
 
 PROMPT_TYPE="vanilla"
 SAMPLING_TYPE="self_random" 
@@ -12,7 +14,7 @@ CONFIDENCE_TYPE="${PROMPT_TYPE}_${SAMPLING_TYPE}_${NUM_ENSEMBLE}"
 DATASET_NAME="Financial_PhraseBank"
 MODEL_NAME="llama_2_7b_chat_hf"
 TASK_TYPE="multi_choice_qa"
-DATASET_PATH="/content/drive/MyDrive/llm_trust/bank.csv"
+DATASET_PATH="C:/Users/minjiyoo/Desktop/llm-uncertainty/bank.csv"
 USE_COT=false # use cot or not
 TEMPERATURE=0.0
 TOP_K=1
@@ -30,7 +32,7 @@ if [ "$USE_COT" = true ] ; then
 fi
 
 
-python ../query_top_k.py \
+python3 ../query_top_k.py \
    --dataset_name  $DATASET_NAME \
    --data_path $DATASET_PATH \
    --output_file  $RESULT_FILE \
@@ -45,7 +47,7 @@ python ../query_top_k.py \
 
 
 # uncomment following lines to run test and visualization
-python ../extract_answers.py \
+python3 ../extract_answers.py \
    --input_file $RESULT_FILE \
    --model_name  $MODEL_NAME \
    --dataset_name  $DATASET_NAME \
@@ -53,11 +55,12 @@ python ../extract_answers.py \
    --prompt_type $PROMPT_TYPE \
    --sampling_type $SAMPLING_TYPE \
    --num_ensemble $NUM_ENSEMBLE \
+   --num_K $TOP_K \
     $USE_COT_FLAG
 
 RESULT_FILE_PROCESSED=$(echo $RESULT_FILE | sed 's/\.json$/_processed.json/')
 
-python ../vis_aggregated_conf.py \
+python3 ../vis_aggregated_conf.py \
     --input_file $RESULT_FILE_PROCESSED \
     --model_name  $MODEL_NAME \
     --dataset_name  $DATASET_NAME \
@@ -65,4 +68,5 @@ python ../vis_aggregated_conf.py \
     --prompt_type $PROMPT_TYPE  \
     --sampling_type $SAMPLING_TYPE \
     --num_ensemble $NUM_ENSEMBLE \
+    --num_K $TOP_K \
     $USE_COT_FLAG    
