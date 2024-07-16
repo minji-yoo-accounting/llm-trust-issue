@@ -21,7 +21,7 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 
 def LlamaChatCompletion(model_name, prompt, max_tokens):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    print(f"Using device: {device}")
+    #print(f"Using device: {device}")
 
     # Load the tokenizer and model
     tokenizer = AutoTokenizer.from_pretrained(model_name)
@@ -41,7 +41,7 @@ def LlamaChatCompletion(model_name, prompt, max_tokens):
 
     # Decode the output
     decoded_outputs = tokenizer.batch_decode(outputs.sequences, skip_special_tokens=True)
-
+    pdb.set_trace()
     return decoded_outputs
     
     # logit=1
