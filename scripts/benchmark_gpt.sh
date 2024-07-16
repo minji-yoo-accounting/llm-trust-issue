@@ -46,7 +46,6 @@ python3 ../query_vanilla_or_cot.py \
    --sampling_type $SAMPLING_TYPE \
    --num_ensemble $NUM_ENSEMBLE \
    --temperature_for_ensemble $TEMPERATURE \
-   --num_K $TOP_K \
    $USE_COT_FLAG
 
 
