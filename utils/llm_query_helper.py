@@ -69,7 +69,7 @@ def calculate_result_per_question(model_name, question, prompt, final_result, er
             elif model_name.lower() == 'llama_2_7b_chat_hf':
                 pdb.set_trace()
                 from utils.api_llama import LlamaChatCompletion
-                model_name = "daryl149/llama-2-7b-chat-hf"
+                model_name = "meta-llama/Llama-2-7b-hf"
                 orginal_anser = LlamaChatCompletion(model_name, prompt, max_tokens=max_tokens)
                 
                 
