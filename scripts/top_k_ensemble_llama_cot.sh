@@ -19,7 +19,7 @@ TASK_TYPE="multi_choice_qa"
 DATASET_PATH="/content/drive/MyDrive/llm_trust/bank.csv"
 USE_COT=true # use cot or not
 TEMPERATURE=0.7
-TOP_K=4
+TOP_K=3
 
 
 #############################################################
