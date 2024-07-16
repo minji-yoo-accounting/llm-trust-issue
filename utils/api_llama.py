@@ -23,13 +23,13 @@ def LlamaChatCompletion(model_name, prompt, max_tokens):
     outputs = model.generate(
         input_ids=input_ids,
         max_new_tokens=max_tokens,
-        return_dict_in_generate=False,
+        return_dict_in_generate=True,
         output_scores=False,
         output_hidden_states=False
     )
 
     # Decode the output
-    tokenizer.batch_decode(outputs, skip_special_tokens=True)
+    decoded_outputs = tokenizer.batch_decode(outputs.sequences, skip_special_tokens=True)
     
-    return outputs
+    return decoded_outputs
     
