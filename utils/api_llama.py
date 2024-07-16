@@ -41,7 +41,7 @@ def LlamaChatCompletion(model_name, prompt, max_tokens):
 
     # Decode the output
     decoded_outputs = tokenizer.batch_decode(outputs.sequences, skip_special_tokens=True)
-    pdb.set_trace()
+    #pdb.set_trace()
     return decoded_outputs
     
     # logit=1
