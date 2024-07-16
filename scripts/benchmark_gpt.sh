@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #set this in bash terminal
-#export OPENAI_API_KEY="sk-proj-zqqDK5fZz9EyBIhLaaXcT3BlbkFJOM95Mer9tVvCs4qkxYfQ"
+#export OPENAI_API_KEY=""
 #echo $OPENAI_API_KEY
 
 

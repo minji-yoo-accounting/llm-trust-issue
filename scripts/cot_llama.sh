@@ -1,3 +1,4 @@
+#!/bin/bash
 
 PROMPT_TYPE="cot"
 SAMPLING_TYPE="self_random" 
