@@ -212,9 +212,7 @@ for idx, question in enumerate(qa_data.keys()):
         final_json = {'hyperparameters': params, 'elapsed_time': "Elapsed time: {:.2f} seconds".format(elapsed_time), 'sample_tested': len(final_result), 'error_count':len(error_dataset), 'sample_prompt':{'question': sample_question, 'hint': sample_hint_prompt, 'prompt': sample_prompt}, 'final_result': final_result, 'error_dataset': error_dataset}
         with open(args.output_file, 'w') as f:
             f.write(json.dumps(final_json, indent=4))
-        pdb.set_trace()
-    print("-"*70)
-    
+   
             
 
 end_time = time.time()
