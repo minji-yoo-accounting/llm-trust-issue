@@ -74,9 +74,12 @@ else:
     raise ValueError(f"task_type {args.task_type} not supported")
 
 if args.use_cot:
-    prompt_description = f"Read the question, analyze step by step, provide your answer and your confidence in this answer. Note: The confidence indicates how likely you think your answer is true.\nUse the following format to answer:\n```Explanation: [insert step-by-step analysis here]\nAnswer and Confidence (0-100): [ONLY the {answer_type}; not a complete sentence], [Your confidence level, please only include the numerical number in the range of 0-100]%\n```\nOnly give me the reply according to this format, don't give me any other words."
+    prompt_description = f"Read the question, consider it from an investor's viewpoint, determining whether the news would positively, negatively, or neutrally influence the stock price. Analyze step by step and provide your answer and your confidence in this answer.  Note: The confidence indicates how likely you think your answer is true.\nUse the following format to answer:\n```Explanation: [insert step-by-step analysis here]\nAnswer and Confidence (0-100): [ONLY the {answer_type}; not a complete sentence], [Your confidence level, please only include the numerical number in the range of 0-100]%\n```\nOnly give me the reply according to this format, don't give me any other words."
+    # prompt_description = f"Read the question, analyze step by step, provide your answer and your confidence in this answer. Note: The confidence indicates how likely you think your answer is true.\nUse the following format to answer:\n```Explanation: [insert step-by-step analysis here]\nAnswer and Confidence (0-100): [ONLY the {answer_type}; not a complete sentence], [Your confidence level, please only include the numerical number in the range of 0-100]%\n```\nOnly give me the reply according to this format, don't give me any other words."
 else:
-    prompt_description = f"Read the question, provide your answer and your confidence in this answer. Note: The confidence indicates how likely you think your answer is true.\nUse the following format to answer:\n```Answer and Confidence (0-100): [ONLY the {answer_type}; not a complete sentence], [Your confidence level, please only include the numerical number in the range of 0-100]%```\nOnly the answer and confidence, don't give me the explanation."
+    prompt_description = f"Read the question, consider it from an investor's viewpoint, determining whether the news would positively, negatively, or neutrally influence the stock price. Provide your answer and your confidence in this answer.  Note: The confidence indicates how likely you think your answer is true.\nUse the following format to answer:\n```Answer and Confidence (0-100): [ONLY the {answer_type}; not a complete sentence], [Your confidence level, please only include the numerical number in the range of 0-100]%```\nOnly the answer and confidence, don't give me the explanation."
+    # prompt_description = f"Read the question, provide your answer and your confidence in this answer. Note: The confidence indicates how likely you think your answer is true.\nUse the following format to answer:\n```Answer and Confidence (0-100): [ONLY the {answer_type}; not a complete sentence], [Your confidence level, please only include the numerical number in the range of 0-100]%```\nOnly the answer and confidence, don't give me the explanation."
+
 
 
 hint_prompts = {
@@ -189,7 +192,7 @@ for idx, question in enumerate(qa_data.keys()):
             prompt = generate_prompt(prompt_description, question, misleading_hint)
             print(f"using {hint_type}, prompt: \n{prompt}")
             
-            final_result, error_dataset = calculate_result_per_question(args.model_name, question, prompt, final_result, error_dataset, qa_data, hint_type, args.task_type, args.use_cot, openai_key=openai_key, temperature=args.temperature_for_ensemble)
+            final_result, error_dataset = calculate_result_per_question(args.model_name, question, prompt, final_result, error_dataset, qa_data, hint_type, args.task_type, args.use_cot, temperature=args.temperature_for_ensemble)
             
             final_result[question][hint_type]["hint_entry"] = misleading_hint
         
@@ -197,7 +200,7 @@ for idx, question in enumerate(qa_data.keys()):
         for ith in range(args.num_ensemble):
             prompt = generate_prompt(prompt_description, question, misleading_hint="")
             hint_type = f"trail_{ith}"
-            final_result, error_dataset = calculate_result_per_question(args.model_name, question, prompt, final_result, error_dataset, qa_data, hint_type, args.task_type, args.use_cot, openai_key=openai_key, temperature=args.temperature_for_ensemble)
+            final_result, error_dataset = calculate_result_per_question(args.model_name, question, prompt, final_result, error_dataset, qa_data, hint_type, args.task_type, args.use_cot, temperature=args.temperature_for_ensemble)
     
     if idx % 5 == 0:
         end_time = time.time()
@@ -212,9 +215,7 @@ for idx, question in enumerate(qa_data.keys()):
         final_json = {'hyperparameters': params, 'elapsed_time': "Elapsed time: {:.2f} seconds".format(elapsed_time), 'sample_tested': len(final_result), 'error_count':len(error_dataset), 'sample_prompt':{'question': sample_question, 'hint': sample_hint_prompt, 'prompt': sample_prompt}, 'final_result': final_result, 'error_dataset': error_dataset}
         with open(args.output_file, 'w') as f:
             f.write(json.dumps(final_json, indent=4))
-        pdb.set_trace()
-    print("-"*70)
-    
+   
             
 
 end_time = time.time()

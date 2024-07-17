@@ -79,9 +79,11 @@ else:
 
     
 if not args.use_cot:
-    prompt_description = f"Provide your {k} best guesses and the probability that each is correct (0% to 100%) for the following question. Give ONLY the {task_output_description} of your guesses and probabilities, no other words or explanation. For example:\n"
+    # prompt_description = f"Provide your {k} best guesses and the probability that each is correct (0% to 100%) for the following question. Give ONLY the {task_output_description} of your guesses and probabilities, no other words or explanation. For example:\n"
+    prompt_description = f"Provide your {k} best guesses and the probability that each is correct (0% to 100%) for the following question. Note that you need to consider it from an investor's viewpoint, determining whether the news would positively, negatively, or neutrally influence the stock price. Give ONLY the {task_output_description} of your guesses and probabilities, no other words or explanation. For example:\n"
 elif args.use_cot:
-    prompt_description = f"Provide your {k} best guesses and the probability that each is correct (0% to 100%) for the following question. Give your step-by-step reasoning in a few words first and then give the final answer using the following format:\n"
+    # prompt_description = f"Provide your {k} best guesses and the probability that each is correct (0% to 100%) for the following question. Give your step-by-step reasoning in a few words first and then give the final answer using the following format:\n"
+    prompt_description = f"Provide your {k} best guesses and the probability that each is correct (0% to 100%) for the following question. Note that you need to consider it from an investor's viewpoint, determining whether the news would positively, negatively, or neutrally influence the stock price. Give your step-by-step reasoning in a few words first and then give the final answer using the following format:\n"
     
 
 # we finally use the confidence before all answers prompting 
