@@ -20,7 +20,7 @@ text_generation_pipeline = pipeline(
 
 
 
-def LlamaChatCompletion(prompt, use_sampling=True, temperature=0.6, top_p=0.9, repetition_penalty=1.2, max_token = max_token):
+def LlamaChatCompletion(prompt, use_sampling=True, temperature=0.6, top_p=0.9, repetition_penalty=1.2, max_tokens = max_tokens):
     # Generate the output with sampling, temperature, top_p, and repetition penalty
     sequences = text_generation_pipeline(
         prompt,
@@ -31,7 +31,7 @@ def LlamaChatCompletion(prompt, use_sampling=True, temperature=0.6, top_p=0.9, r
         repetition_penalty=repetition_penalty,
         num_return_sequences=1,
         eos_token_id=tokenizer.eos_token_id,
-        max_length=max_token,
+        max_length=max_tokens,
     )
     
     # Extract and return the generated text
