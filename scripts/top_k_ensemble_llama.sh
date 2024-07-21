@@ -18,7 +18,7 @@ MODEL_NAME="llama_2_7b_chat_hf"
 TASK_TYPE="multi_choice_qa"
 DATASET_PATH="/content/drive/MyDrive/llm_trust/bank.csv"
 USE_COT=false # use cot or not
-TEMPERATURE=0.7
+TEMPERATURE=0.6
 TOP_K=3
 
 
