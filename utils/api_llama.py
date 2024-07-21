@@ -20,7 +20,7 @@ text_generation_pipeline = pipeline(
 
 
 
-def LlamaChatCompletion(prompt, use_sampling=True, temperature=0.6, top_p=0.9, repetition_penalty=1.2, max_tokens):
+def LlamaChatCompletion(prompt, max_tokens, use_sampling=True, temperature=0.6, top_p=0.9, repetition_penalty=1.2):
     # Generate the output with sampling, temperature, top_p, and repetition penalty
     sequences = text_generation_pipeline(
         prompt,
