@@ -10,3 +10,5 @@ dataset_name,model_name,prompt_type,aggregation_type,acc,ece,auroc,auprc_p,auprc
 Financial_PhraseBank,chatgpt,none,avg_conf,0.93198,0.04443,0.74295,32.51178,0.96830,0.25104,False,llama2_test_results.csv
 dataset_name,model_name,prompt_type,aggregation_type,acc,ece,auroc,auprc_p,auprc_n,use_cot,input_file_name
 Financial_PhraseBank,chatgpt,none,avg_conf,0.93198,0.04443,0.74295,32.51178,0.96830,0.25104,False,roberta_test_results.csv
+dataset_name,model_name,prompt_type,aggregation_type,acc,ece,auroc,auprc_p,auprc_n,use_cot,input_file_name
+Financial_PhraseBank,chatgpt,none,avg_conf,0.78726,0.04191,0.80533,76.54194,0.93768,0.48496,False,finbert_test_results.csv
