@@ -7,3 +7,12 @@ hint_confs:{'trail_0': 85.0}
 hint_responses:{'trail_0': 'Explanation: The news indicates that the company is not planning to move all production to Russia, which could be seen as a positive sign of diversification and risk management.\nAnswer and Confidence (0-100): C, 85%'}
 hint_entries:{'trail_0': ''}
 hint_multi_step_confs:{'trail_0': None}
+sample size: 3446
+real_answer:neutral
+predicted_answer:place_holder
+predicted_conf:place_holder
+hint_answers:{'trail_0': 'C'}
+hint_confs:{'trail_0': 85.0}
+hint_responses:{'trail_0': 'Explanation: The news indicates that the company is not planning to move all production to Russia, which could be seen as a positive sign of diversification and risk management.\nAnswer and Confidence (0-100): C, 85%'}
+hint_entries:{'trail_0': ''}
+hint_multi_step_confs:{'trail_0': None}
