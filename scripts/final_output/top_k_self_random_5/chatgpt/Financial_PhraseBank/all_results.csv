@@ -3,3 +3,13 @@ Financial_PhraseBank,chatgpt,top_k,self_random,avg_conf_top1,0.49623,0.40461,0.6
 Financial_PhraseBank,chatgpt,top_k,self_random,avg_conf_topk,0.48637,0.19466,0.68476,336.42866,0.71119,0.61523,False,Financial_PhraseBank_chatgpt_07-16-20-56_processed.json,5
 Financial_PhraseBank,chatgpt,top_k,self_random,pair_rank_conf,0.52755,0.31229,0.55808,432.07947,0.57054,0.51574,False,Financial_PhraseBank_chatgpt_07-16-20-56_processed.json,5
 Financial_PhraseBank,chatgpt,top_k,self_random,consistency,0.51450,0.37023,0.57007,441.51563,0.55694,0.52700,False,Financial_PhraseBank_chatgpt_07-16-20-56_processed.json,5
+dataset_name,model_name,prompt_type,sampling_type,aggregation_type,acc,ece,auroc,auprc_p,auprc_n,use_cot,input_file_name,num_ensemble
+Financial_PhraseBank,chatgpt,top_k,self_random,avg_conf_top1,0.39936,0.54891,0.58002,557.68845,0.44482,0.64377,True,Financial_PhraseBank_chatgpt_07-17-10-09_processed.json,5
+Financial_PhraseBank,chatgpt,top_k,self_random,avg_conf_topk,0.40284,0.32356,0.80832,343.02800,0.77042,0.80237,True,Financial_PhraseBank_chatgpt_07-17-10-09_processed.json,5
+Financial_PhraseBank,chatgpt,top_k,self_random,pair_rank_conf,0.40951,0.45719,0.49173,616.64049,0.38731,0.59821,True,Financial_PhraseBank_chatgpt_07-17-10-09_processed.json,5
+Financial_PhraseBank,chatgpt,top_k,self_random,consistency,0.39849,0.54408,0.58125,557.79237,0.44380,0.64978,True,Financial_PhraseBank_chatgpt_07-17-10-09_processed.json,5
+dataset_name,model_name,prompt_type,sampling_type,aggregation_type,acc,ece,auroc,auprc_p,auprc_n,use_cot,input_file_name,num_ensemble
+Financial_PhraseBank,chatgpt,top_k,self_random,avg_conf_top1,0.39936,0.54891,0.58002,557.68845,0.44482,0.64377,True,Financial_PhraseBank_chatgpt_07-17-10-09_processed.json,5
+Financial_PhraseBank,chatgpt,top_k,self_random,avg_conf_topk,0.40284,0.32356,0.80832,343.02800,0.77042,0.80237,True,Financial_PhraseBank_chatgpt_07-17-10-09_processed.json,5
+Financial_PhraseBank,chatgpt,top_k,self_random,pair_rank_conf,0.40951,0.45719,0.49173,616.64049,0.38731,0.59821,True,Financial_PhraseBank_chatgpt_07-17-10-09_processed.json,5
+Financial_PhraseBank,chatgpt,top_k,self_random,consistency,0.39849,0.54408,0.58125,557.79237,0.44380,0.64978,True,Financial_PhraseBank_chatgpt_07-17-10-09_processed.json,5
