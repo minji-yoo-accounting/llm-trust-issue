@@ -16,3 +16,12 @@ hint_confs:{'trail_0': {'0': 40.0, '1': 35.0, '2': 25.0}, 'trail_1': {'0': 60.0,
 hint_responses:{'trail_0': 'G1: B\nP1: 40%\nG2: C\nP2: 35%\nG3: A\nP3: 25%', 'trail_1': 'G1: B\nP1: 60%\nG2: C\nP2: 30%\nG3: A\nP3: 10%', 'trail_2': 'G1: B\nP1: 60%\nG2: C\nP2: 30%\nG3: A\nP3: 10%', 'trail_3': 'G1: B\nP1: 70%\nG2: C\nP2: 20%\nG3: A\nP3: 10%', 'trail_4': 'G1: C\nP1: 60%\nG2: B\nP2: 30%\nG3: A\nP3: 10%'}
 hint_entries:{'trail_0': '', 'trail_1': '', 'trail_2': '', 'trail_3': '', 'trail_4': ''}
 hint_multi_step_confs:{'trail_0': None, 'trail_1': None, 'trail_2': None, 'trail_3': None, 'trail_4': None}
+sample size: 3448
+real_answer:neutral
+predicted_answer:place_holder
+predicted_conf:place_holder
+hint_answers:{'trail_0': {'0': 'B', '1': 'C', '2': 'A'}, 'trail_1': {'0': 'B', '1': 'C', '2': 'A'}, 'trail_2': {'0': 'B', '1': 'C', '2': 'A'}, 'trail_3': {'0': 'B', '1': 'C', '2': 'A'}, 'trail_4': {'0': 'C', '1': 'B', '2': 'A'}}
+hint_confs:{'trail_0': {'0': 40.0, '1': 35.0, '2': 25.0}, 'trail_1': {'0': 60.0, '1': 30.0, '2': 10.0}, 'trail_2': {'0': 60.0, '1': 30.0, '2': 10.0}, 'trail_3': {'0': 70.0, '1': 20.0, '2': 10.0}, 'trail_4': {'0': 60.0, '1': 30.0, '2': 10.0}}
+hint_responses:{'trail_0': 'G1: B\nP1: 40%\nG2: C\nP2: 35%\nG3: A\nP3: 25%', 'trail_1': 'G1: B\nP1: 60%\nG2: C\nP2: 30%\nG3: A\nP3: 10%', 'trail_2': 'G1: B\nP1: 60%\nG2: C\nP2: 30%\nG3: A\nP3: 10%', 'trail_3': 'G1: B\nP1: 70%\nG2: C\nP2: 20%\nG3: A\nP3: 10%', 'trail_4': 'G1: C\nP1: 60%\nG2: B\nP2: 30%\nG3: A\nP3: 10%'}
+hint_entries:{'trail_0': '', 'trail_1': '', 'trail_2': '', 'trail_3': '', 'trail_4': ''}
+hint_multi_step_confs:{'trail_0': None, 'trail_1': None, 'trail_2': None, 'trail_3': None, 'trail_4': None}
