@@ -23,3 +23,8 @@ Financial_PhraseBank,chatgpt,top_k,self_random,avg_conf_top1,0.49623,0.40461,0.6
 Financial_PhraseBank,chatgpt,top_k,self_random,avg_conf_topk,0.48637,0.19466,0.68476,336.42866,0.71119,0.61523,False,Financial_PhraseBank_chatgpt_07-16-20-56_processed.json,5
 Financial_PhraseBank,chatgpt,top_k,self_random,pair_rank_conf,0.53161,0.30731,0.54575,432.67329,0.56999,0.50384,False,Financial_PhraseBank_chatgpt_07-16-20-56_processed.json,5
 Financial_PhraseBank,chatgpt,top_k,self_random,consistency,0.51450,0.37023,0.57007,441.51563,0.55694,0.52700,False,Financial_PhraseBank_chatgpt_07-16-20-56_processed.json,5
+dataset_name,model_name,prompt_type,sampling_type,aggregation_type,acc,ece,auroc,auprc_p,auprc_n,use_cot,input_file_name,num_ensemble
+Financial_PhraseBank,chatgpt,top_k,self_random,avg_conf_top1,0.49623,0.40461,0.60374,441.32304,0.56319,0.58528,False,Financial_PhraseBank_chatgpt_07-16-20-56_processed.json,5
+Financial_PhraseBank,chatgpt,top_k,self_random,avg_conf_topk,0.48637,0.19466,0.68476,336.42866,0.71119,0.61523,False,Financial_PhraseBank_chatgpt_07-16-20-56_processed.json,5
+Financial_PhraseBank,chatgpt,top_k,self_random,pair_rank_conf,0.52233,0.31667,0.54464,449.66515,0.55198,0.50858,False,Financial_PhraseBank_chatgpt_07-16-20-56_processed.json,5
+Financial_PhraseBank,chatgpt,top_k,self_random,consistency,0.51450,0.37023,0.57007,441.51563,0.55694,0.52700,False,Financial_PhraseBank_chatgpt_07-16-20-56_processed.json,5
