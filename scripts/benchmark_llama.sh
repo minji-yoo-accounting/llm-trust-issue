@@ -1,3 +1,5 @@
+#!/bin/bash
+
 
 PROMPT_TYPE="vanilla"
 SAMPLING_TYPE="self_random" 
@@ -30,7 +32,7 @@ if [ "$USE_COT" = true ] ; then
 fi
 
 
-python ../query_top_k.py \
+python3 ../query_vanilla_or_cot.py \
    --dataset_name  $DATASET_NAME \
    --data_path $DATASET_PATH \
    --output_file  $RESULT_FILE \
@@ -40,12 +42,11 @@ python ../query_top_k.py \
    --sampling_type $SAMPLING_TYPE \
    --num_ensemble $NUM_ENSEMBLE \
    --temperature_for_ensemble $TEMPERATURE \
-   --num_K $TOP_K \
    $USE_COT_FLAG
 
 
 # uncomment following lines to run test and visualization
-python ../extract_answers.py \
+python3 ../extract_answers.py \
    --input_file $RESULT_FILE \
    --model_name  $MODEL_NAME \
    --dataset_name  $DATASET_NAME \
@@ -53,11 +54,12 @@ python ../extract_answers.py \
    --prompt_type $PROMPT_TYPE \
    --sampling_type $SAMPLING_TYPE \
    --num_ensemble $NUM_ENSEMBLE \
+   --num_K $TOP_K \
     $USE_COT_FLAG
 
 RESULT_FILE_PROCESSED=$(echo $RESULT_FILE | sed 's/\.json$/_processed.json/')
 
-python ../vis_aggregated_conf.py \
+python3 ../vis_aggregated_conf.py \
     --input_file $RESULT_FILE_PROCESSED \
     --model_name  $MODEL_NAME \
     --dataset_name  $DATASET_NAME \
@@ -65,4 +67,5 @@ python ../vis_aggregated_conf.py \
     --prompt_type $PROMPT_TYPE  \
     --sampling_type $SAMPLING_TYPE \
     --num_ensemble $NUM_ENSEMBLE \
+    --num_K $TOP_K \
     $USE_COT_FLAG    

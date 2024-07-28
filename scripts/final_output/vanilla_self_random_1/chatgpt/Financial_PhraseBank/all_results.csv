@@ -1,0 +1,6 @@
+dataset_name,model_name,prompt_type,aggregation_type,acc,ece,auroc,auprc_p,auprc_n,use_cot,input_file_name
+Financial_PhraseBank,chatgpt,vanilla,avg_conf,0.48086,0.37934,0.64247,299.95580,0.62718,0.62118,False,Financial_PhraseBank_chatgpt_07-16-18-41_processed.json
+Financial_PhraseBank,chatgpt,vanilla,consistency,0.48086,0.51914,0.50000,519.14151,0.48086,0.51914,False,Financial_PhraseBank_chatgpt_07-16-18-41_processed.json
+dataset_name,model_name,prompt_type,aggregation_type,acc,ece,auroc,auprc_p,auprc_n,use_cot,input_file_name
+Financial_PhraseBank,chatgpt,vanilla,avg_conf,0.48086,0.37934,0.64247,299.95580,0.62718,0.62118,False,Financial_PhraseBank_chatgpt_07-16-18-41_processed.json
+Financial_PhraseBank,chatgpt,vanilla,consistency,0.48086,0.51914,0.50000,519.14151,0.48086,0.51914,False,Financial_PhraseBank_chatgpt_07-16-18-41_processed.json

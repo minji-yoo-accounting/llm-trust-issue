@@ -132,6 +132,8 @@ elif args.dataset_name in ["sportUND", "strategyQA", "StrategyQA", "Bigbench_str
     normal_option_list = ["A", "B"]
 elif args.dataset_name in ["GSM8K", "BigBench_ObjectCounting"]:
     normal_option_list = None
+elif args.dataset_name in ["Financial_PhraseBank"]:
+    normal_option_list = ["A", "B", "C"]
 else:
     raise NotImplementedError(f"Please specify the normal_option_list for this dataset {args.dataset_name}")
 

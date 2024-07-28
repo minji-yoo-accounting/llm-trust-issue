@@ -1,0 +1,30 @@
+{
+    "hyperparameters": {
+        "dataset_name": "Financial_PhraseBank",
+        "data_path": "C:/Users/minjiyoo/Desktop/llm-uncertainty/bank.csv",
+        "output_file": "final_output/vanilla_self_random_1/llama_2_7b_chat_hf/Financial_PhraseBank/Financial_PhraseBank_llama_2_7b_chat_hf_07-15-22-47.json",
+        "use_cot": false,
+        "model_name": "llama_2_7b_chat_hf",
+        "task_type": "multi_choice_qa",
+        "prompt_type": "vanilla",
+        "num_K": 1,
+        "sampling_type": "self_random",
+        "num_ensemble": 1,
+        "temperature_for_ensemble": 0.0
+    },
+    "elapsed_time": "Elapsed time: 146.89 seconds",
+    "sample_tested": 4,
+    "error_count": 0,
+    "sample_prompt": {
+        "question": "According to Gran , the company has no plans to move all production to Russia , although that is where the company is growing .\nOptions: (A) negative  (B) neutral  (C) positive  ",
+        "hint": "",
+        "prompt": "Provide your 1 best guesses and the probability that each is correct (0% to 100%) for the following question. Give ONLY the option letter of your guesses and probabilities, no other words or explanation. For example:\nG1: <ONLY the option letter of first most likely guess; not a complete sentence, just the guess!>\nP1: <ONLY the probability that G1 is correct, without any extra commentary whatsoever; just the probability!>\n...\nG1: <ONLY the option letter of 1-th most likely guess>\nP1: <ONLY the probability that G1 is correct, without any extra commentary whatsoever; just the probability!>\n\n\nQuestion: According to Gran , the company has no plans to move all production to Russia , although that is where the company is growing .\nOptions: (A) negative  (B) neutral  (C) positive  \n"
+    },
+    "final_result": {
+        "According to Gran , the company has no plans to move all production to Russia , although that is where the company is growing .\nOptions: (A) negative  (B) neutral  (C) positive  ": {},
+        "With the new production plant the company would increase its capacity to meet the expected increase in demand and would improve the use of raw materials and therefore increase the production profitability .\nOptions: (A) negative  (B) neutral  (C) positive  ": {},
+        "For the last quarter of 2010 , Componenta 's net sales doubled to EUR131m from EUR76m for the same period a year earlier , while it moved to a zero pre-tax profit from a pre-tax loss of EUR7m .\nOptions: (A) negative  (B) neutral  (C) positive  ": {},
+        "In the third quarter of 2010 , net sales increased by 5.2 % to EUR 205.5 mn , and operating profit by 34.9 % to EUR 23.5 mn .\nOptions: (A) negative  (B) neutral  (C) positive  ": {}
+    },
+    "error_dataset": {}
+}

@@ -79,7 +79,7 @@ SPORTUND = "sportUND"
 PROFESSIONAL_LAW = "Professional_Law"
 BUSINESS_ETHICS = "Business_Ethics"
 STRATEGY_QA = "strategyQA"
-    
+FINANCIAL = "Financial_PhraseBank"      
 
 # the options are different for different datasets
 # used to extract the specific answers for checking whether the LLM has replied correctly or not (sometimes the LLM may reply with the true answer rather than the option letter we want e.g. "A" "B")
@@ -108,6 +108,7 @@ extract_options = {
     STRATEGY_QA: lambda *_: {"A": "Yes", "B": "No"},
     BUSINESS_ETHICS: lambda hint_value, _: {chr(ord('A') + idx): option for idx, option in enumerate(hint_value['real_answer']['options'])},
     PROFESSIONAL_LAW: lambda hint_value, _: {chr(ord('A') + idx): option for idx, option in enumerate(hint_value['real_answer']['options'])},
+    FINANCIAL: lambda *_: {"A": "negative", "B": "neutral", "C":"positive"},
 }.get(args.dataset_name, lambda *_: {})
 
 ################# MAIN FUNCTION FOR CONSISTENCY_DRIVEN HINT RESPONSE #################

@@ -1,3 +1,13 @@
+[Edit] 
+In case of Llama2 model, you need to specify do_sampling in llm_query_helper.py 
+
+
+
+
+
+
+
+
 Can LLMs Express Their Uncertainty? An Empirical Evaluation of Confidence Elicitation in LLMs
 ==
 Code for the paper "Can LLMs Express Their Uncertainty? An Empirical Evaluation of Confidence Elicitation in LLMs"

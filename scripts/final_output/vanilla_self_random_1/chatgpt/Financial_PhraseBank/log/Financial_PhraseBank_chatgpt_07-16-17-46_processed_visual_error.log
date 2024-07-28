@@ -1,0 +1,9 @@
+sample size: 3448
+real_answer:neutral
+predicted_answer:place_holder
+predicted_conf:place_holder
+hint_answers:{'trail_0': 'A'}
+hint_confs:{'trail_0': 90.0}
+hint_responses:{'trail_0': 'Answer and Confidence (0-100): A, 90%'}
+hint_entries:{'trail_0': ''}
+hint_multi_step_confs:{'trail_0': None}

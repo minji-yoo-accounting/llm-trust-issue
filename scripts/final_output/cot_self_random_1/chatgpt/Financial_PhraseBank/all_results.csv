@@ -1,0 +1,15 @@
+dataset_name,model_name,prompt_type,aggregation_type,acc,ece,auroc,auprc_p,auprc_n,use_cot,input_file_name
+Financial_PhraseBank,chatgpt,cot,avg_conf,0.44515,0.44369,0.73939,321.57437,0.67952,0.73730,True,Financial_PhraseBank_chatgpt_07-16-19-33_processed.json
+Financial_PhraseBank,chatgpt,cot,consistency,0.44515,0.55485,0.50000,554.55603,0.44515,0.55485,True,Financial_PhraseBank_chatgpt_07-16-19-33_processed.json
+dataset_name,model_name,prompt_type,aggregation_type,acc,ece,auroc,auprc_p,auprc_n,use_cot,input_file_name
+Financial_PhraseBank,chatgpt,cot,avg_conf,0.44515,0.44369,0.73939,321.57437,0.67952,0.73730,True,Financial_PhraseBank_chatgpt_07-16-19-33_processed.json
+Financial_PhraseBank,chatgpt,cot,consistency,0.44515,0.55485,0.50000,554.55603,0.44515,0.55485,True,Financial_PhraseBank_chatgpt_07-16-19-33_processed.json
+dataset_name,model_name,prompt_type,aggregation_type,acc,ece,auroc,auprc_p,auprc_n,use_cot,input_file_name
+Financial_PhraseBank,chatgpt,cot,avg_conf,0.44515,0.44369,0.73939,321.57437,0.67952,0.73730,True,Financial_PhraseBank_chatgpt_07-16-19-33_processed.json
+Financial_PhraseBank,chatgpt,cot,consistency,0.44515,0.55485,0.50000,554.55603,0.44515,0.55485,True,Financial_PhraseBank_chatgpt_07-16-19-33_processed.json
+dataset_name,model_name,prompt_type,aggregation_type,acc,ece,auroc,auprc_p,auprc_n,use_cot,input_file_name
+Financial_PhraseBank,chatgpt,cot,avg_conf,0.44515,0.44369,0.73939,321.57437,0.67952,0.73730,True,Financial_PhraseBank_chatgpt_07-16-19-33_processed.json
+Financial_PhraseBank,chatgpt,cot,consistency,0.44515,0.55485,0.50000,554.55603,0.44515,0.55485,True,Financial_PhraseBank_chatgpt_07-16-19-33_processed.json
+dataset_name,model_name,prompt_type,aggregation_type,acc,ece,auroc,auprc_p,auprc_n,use_cot,input_file_name
+Financial_PhraseBank,chatgpt,cot,avg_conf,0.44515,0.44369,0.73939,321.57437,0.67952,0.73730,True,Financial_PhraseBank_chatgpt_07-16-19-33_processed.json
+Financial_PhraseBank,chatgpt,cot,consistency,0.44515,0.55485,0.50000,554.55603,0.44515,0.55485,True,Financial_PhraseBank_chatgpt_07-16-19-33_processed.json

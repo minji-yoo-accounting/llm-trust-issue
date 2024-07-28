@@ -1,0 +1,54 @@
+
+
+Top-1 ERROR for: [0].
+Reponse: Step 1: An individual promotion generating slightly higher-than-expected revenues is generally seen as a positive sign for a company, indicating effective marketing and potential for increased profits.  Step 2: As an investor, I would expect this news to positively influence the stock price.  Step 3: The most likely guess is (C) positive. P1: 80% G2: (B) neutral P2: 15% G3: (A) negative P3: 5%
+
+Extracted_answer: {0: None, 1: 'B', 2: 'A'}
+ extracted_conf: {0: None, 1: 15.0, 2: 5.0}
+Something went wrong with: An individual promotion also generated slightly higher-than-expected revenues .
+Options: (A) negative  (B) neutral  (C) positive  
+Step 1: An individual promotion generating slightly higher-than-expected revenues is generally seen as a positive sign for a company, indicating effective marketing and potential for increased profits.
+
+Step 2: As an investor, I would expect this news to positively influence the stock price.
+
+Step 3: The most likely guess is (C) positive.
+P1: 80%
+G2: (B) neutral
+P2: 15%
+G3: (A) negative
+P3: 5%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: Step 1: Rationalization of operations seeking to achieve over EUR 1 million in yearly savings is generally seen as a positive step by investors, as it indicates cost efficiency and potential for increased profits.  Step 2: This news would likely positively influence the stock price.  Step 3: Positive P1: 90% Neutral P2: 10% Negative P3: 0%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: The rationalization of the operations seeks to achieve over EUR 1 million in yearly savings as from the second quarter of the current financial year .
+Options: (A) negative  (B) neutral  (C) positive  
+Step 1: Rationalization of operations seeking to achieve over EUR 1 million in yearly savings is generally seen as a positive step by investors, as it indicates cost efficiency and potential for increased profits.
+
+Step 2: This news would likely positively influence the stock price.
+
+Step 3: Positive
+P1: 90%
+Neutral
+P2: 10%
+Negative
+P3: 0%
+------------------------------------------------------------
+
+
+Match error for: [1, 2].
+Reponse: Step 1: A loss of EUR 0.8 mn is a negative financial result, which could negatively influence the stock price. Step 2: This news would likely be considered negative by investors, as a company going from a profit to a loss is not a good sign.  G1: A P1: 90%  Step 3:  Step 4:  G2: P2:  Step 5:  G3: P3:
+
+Extracted_answer: {0: 'A', 1: None, 2: None}
+ extracted_conf: {0: 90.0, 1: None, 2: None}
+
+
+Match error for: [1].
+Reponse: Step 1: SRV lowering its net sales estimate for the whole of 2008 due to uncertainties in housing sales is likely to negatively influence the stock price, as it indicates a potential decrease in revenue. Step 2: The news is likely to have a 70% negative influence on the stock price, as investors may see it as a sign of financial instability.  G1: A P1: 70%  Step 3: Neutral P3: 20%  G3: B P3: 20%
+
+Extracted_answer: {0: 'A', 1: None, 2: 'B'}
+ extracted_conf: {0: 70.0, 1: None, 2: 20.0}

@@ -1,0 +1,52 @@
+
+
+Top-1 ERROR for: [0].
+Reponse: G2: B P1: 30% G2: C P2: 60% G3: A P3: 10%
+
+Extracted_answer: {0: None, 1: 'C', 2: 'A'}
+ extracted_conf: {0: None, 1: 60.0, 2: 10.0}
+Something went wrong with: NAVTEQ has a commanding lead in installed map data systems in North American vehicles and may be the leader in turn-by-turn navigation data offered by services such as OnStar in North America , said analyst Phil Magney of Telematics Research Group in Minnetonka , Minn. .
+Options: (A) negative  (B) neutral  (C) positive  
+G2: B
+P1: 30%
+G2: C
+P2: 60%
+G3: A
+P3: 10%
+------------------------------------------------------------
+
+
+Match error for: [2].
+Reponse: G1: C P1: 80% G2: B P2: 15% G3: A P2: 5%
+
+Extracted_answer: {0: 'C', 1: 'B', 2: None}
+ extracted_conf: {0: 80.0, 1: 15.0, 2: None}
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G1: A, 70% P1:  B, 20% G3: C, 10%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: ALEXANDRIA , Va. , March 15 -- Jaakko Vilo of Turku , Finland , has developed a panel press .
+Options: (A) negative  (B) neutral  (C) positive  
+G1: A, 70%
+P1:  B, 20%
+G3: C, 10%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G1: B 80% P1:  B 80% G2: C 15% P2:  C 15% G3: A 5% P3: A 5%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: The share capital of Biotie Therapies Corp. constitutes 90,211,860 shares in the aggregate and the number of voting rights attached to the shares amounts to 90,211,860 .
+Options: (A) negative  (B) neutral  (C) positive  
+G1: B 80%
+P1:  B 80%
+G2: C 15%
+P2:  C 15%
+G3: A 5%
+P3: A 5%
+------------------------------------------------------------

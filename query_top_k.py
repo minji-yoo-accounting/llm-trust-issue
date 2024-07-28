@@ -14,7 +14,7 @@ from utils.dataset_loader import load_dataset
 from utils.llm_query_helper import calculate_result_per_question
 from argparse import ArgumentParser
 
-openai_key = "your_openai_key" # TODO: replace with your openai key
+  
 
 time_stamp = time.strftime("%Y-%m-%d_%H-%M")
 
@@ -79,9 +79,11 @@ else:
 
     
 if not args.use_cot:
-    prompt_description = f"Provide your {k} best guesses and the probability that each is correct (0% to 100%) for the following question. Give ONLY the {task_output_description} of your guesses and probabilities, no other words or explanation. For example:\n"
+    # prompt_description = f"Provide your {k} best guesses and the probability that each is correct (0% to 100%) for the following question. Give ONLY the {task_output_description} of your guesses and probabilities, no other words or explanation. For example:\n"
+    prompt_description = f"Provide your {k} best guesses and the probability that each is correct (0% to 100%) for the following question. Note that you need to consider it from an investor's viewpoint, determining whether the news would positively, negatively, or neutrally influence the stock price. Give ONLY the {task_output_description} of your guesses and probabilities, no other words or explanation. For example:\n"
 elif args.use_cot:
-    prompt_description = f"Provide your {k} best guesses and the probability that each is correct (0% to 100%) for the following question. Give your step-by-step reasoning in a few words first and then give the final answer using the following format:\n"
+    # prompt_description = f"Provide your {k} best guesses and the probability that each is correct (0% to 100%) for the following question. Give your step-by-step reasoning in a few words first and then give the final answer using the following format:\n"
+    prompt_description = f"Provide your {k} best guesses and the probability that each is correct (0% to 100%) for the following question. Note that you need to consider it from an investor's viewpoint, determining whether the news would positively, negatively, or neutrally influence the stock price. Give your step-by-step reasoning in a few words first and then give the final answer using the following format:\n"
     
 
 # we finally use the confidence before all answers prompting 
@@ -163,7 +165,7 @@ sample_hint_prompt = generate_misleading_hint(hint_type="hint1" if args.num_ense
 sample_prompt = generate_prompt(prompt_description, question=sample_question, misleading_hint=sample_hint_prompt)
 print("\n-------\n", sample_prompt, "\n-------\n")
 
-pdb.set_trace()
+#pdb.set_trace()
 
 # construct the answer sheet
 if os.path.exists(args.output_file):
@@ -202,7 +204,7 @@ for idx, question in enumerate(qa_data.keys()):
             prompt = generate_prompt(prompt_description, question, misleading_hint)
             print(f"using {hint_type}, prompt: \n{prompt}")
             
-            final_result, error_dataset = calculate_result_per_question(args.model_name, question, prompt, final_result, error_dataset, qa_data, hint_type, args.task_type, args.use_cot, openai_key=openai_key, temperature=args.temperature_for_ensemble)
+            final_result, error_dataset = calculate_result_per_question(args.model_name, question, prompt, final_result, error_dataset, qa_data, hint_type, args.task_type, args.use_cot, temperature=args.temperature_for_ensemble)
             
             final_result[question][hint_type]["hint_entry"] = misleading_hint
         
@@ -210,7 +212,7 @@ for idx, question in enumerate(qa_data.keys()):
         for ith in range(args.num_ensemble):
             prompt = generate_prompt(prompt_description, question, misleading_hint="")
             hint_type = f"trail_{ith}"
-            final_result, error_dataset = calculate_result_per_question(args.model_name, question, prompt, final_result, error_dataset, qa_data, hint_type, args.task_type, args.use_cot, openai_key=openai_key, temperature=args.temperature_for_ensemble)
+            final_result, error_dataset = calculate_result_per_question(args.model_name, question, prompt, final_result, error_dataset, qa_data, hint_type, args.task_type, args.use_cot, temperature=args.temperature_for_ensemble)
     
     if idx % 5 == 0:
         end_time = time.time()
@@ -225,10 +227,7 @@ for idx, question in enumerate(qa_data.keys()):
         final_json = {'hyperparameters': params, 'elapsed_time': "Elapsed time: {:.2f} seconds".format(elapsed_time), 'sample_tested': len(final_result), 'error_count':len(error_dataset), 'sample_prompt':{'question': sample_question, 'hint': sample_hint_prompt, 'prompt': sample_prompt}, 'final_result': final_result, 'error_dataset': error_dataset}
         with open(args.output_file, 'w') as f:
             f.write(json.dumps(final_json, indent=4))
-        pdb.set_trace()
-    
-    print("-"*70)
-    
+     
             
 
 end_time = time.time()
