@@ -15,20 +15,29 @@ CONFIDENCE_TYPE="${PROMPT_TYPE}_${SAMPLING_TYPE}_${NUM_ENSEMBLE}"
 # TODO uncomment following lines to run on different settings
 #############################################################
 
-DATASET_NAME="Financial_PhraseBank"
+# DATASET_NAME="Financial_PhraseBank"
+# MODEL_NAME="chatgpt"
+# TASK_TYPE="multi_choice_qa"
+# DATASET_PATH="C:/Users/minjiyoo/Desktop/llm-uncertainty/bank.csv"
+# USE_COT=false # use cot or not
+# TEMPERATURE=0.0
+# TOP_K=1
+
+DATASET_NAME="ReutersNews"
 MODEL_NAME="chatgpt"
 TASK_TYPE="multi_choice_qa"
-DATASET_PATH="C:/Users/minjiyoo/Desktop/llm-uncertainty/bank.csv"
+DATASET_PATH="C:/Users/minjiyoo/Desktop/llm-uncertainty/articles.csv"
 USE_COT=false # use cot or not
 TEMPERATURE=0.0
 TOP_K=1
 
 #############################################################
 # set time stamp to differentiate the output file
-TIME_STAMPE=$(date "+%m-%d-%H-%M")
+# TIME_STAMPE=$(date "+%m-%d-%H-%M")
 
-OUTPUT_DIR="final_output/$CONFIDENCE_TYPE/$MODEL_NAME/$DATASET_NAME"
-RESULT_FILE="$OUTPUT_DIR/${DATASET_NAME}_${MODEL_NAME}_${TIME_STAMPE}.json"
+# OUTPUT_DIR="final_output/$CONFIDENCE_TYPE/$MODEL_NAME/$DATASET_NAME"
+# RESULT_FILE="$OUTPUT_DIR/${DATASET_NAME}_${MODEL_NAME}_${TIME_STAMPE}.json"
+RESULT_FILE="final_output/vanilla_self_random_1/chatgpt/ReutersNews/ReutersNews_chatgpt_07-30-11-02.json"
 USE_COT_FLAG=""
 
 if [ "$USE_COT" = true ] ; then
@@ -36,17 +45,17 @@ if [ "$USE_COT" = true ] ; then
 fi
 
 
-python3 ../query_vanilla_or_cot.py \
-   --dataset_name  $DATASET_NAME \
-   --data_path $DATASET_PATH \
-   --output_file  $RESULT_FILE \
-   --model_name  $MODEL_NAME \
-   --task_type  $TASK_TYPE  \
-   --prompt_type $PROMPT_TYPE \
-   --sampling_type $SAMPLING_TYPE \
-   --num_ensemble $NUM_ENSEMBLE \
-   --temperature_for_ensemble $TEMPERATURE \
-   $USE_COT_FLAG
+# python3 ../query_vanilla_or_cot.py \
+#    --dataset_name  $DATASET_NAME \
+#    --data_path $DATASET_PATH \
+#    --output_file  $RESULT_FILE \
+#    --model_name  $MODEL_NAME \
+#    --task_type  $TASK_TYPE  \
+#    --prompt_type $PROMPT_TYPE \
+#    --sampling_type $SAMPLING_TYPE \
+#    --num_ensemble $NUM_ENSEMBLE \
+#    --temperature_for_ensemble $TEMPERATURE \
+#    $USE_COT_FLAG
 
 
 # uncomment following lines to run test and visualization

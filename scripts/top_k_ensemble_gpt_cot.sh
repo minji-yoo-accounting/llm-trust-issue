@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #set this in bash terminal
-#export OPENAI_API_KEY=""
+#export OPENAI_API_KEY="your_openai_key"
 #echo $OPENAI_API_KEY
 
 
@@ -18,10 +18,19 @@ CONFIDENCE_TYPE="${PROMPT_TYPE}_${SAMPLING_TYPE}_${NUM_ENSEMBLE}"
 # TODO uncomment following lines to run on different settings
 #############################################################
 
-DATASET_NAME="Financial_PhraseBank"
+# DATASET_NAME="Financial_PhraseBank"
+# MODEL_NAME="chatgpt"
+# TASK_TYPE="multi_choice_qa"
+# DATASET_PATH="C:/Users/minjiyoo/Desktop/llm-uncertainty/bank.csv"
+# USE_COT=true # use cot or not
+# TEMPERATURE=0.7
+# TOP_K=3
+
+
+DATASET_NAME="ReutersNews"
 MODEL_NAME="chatgpt"
 TASK_TYPE="multi_choice_qa"
-DATASET_PATH="C:/Users/minjiyoo/Desktop/llm-uncertainty/bank.csv"
+DATASET_PATH="C:/Users/minjiyoo/Desktop/llm-uncertainty/articles.csv"
 USE_COT=true # use cot or not
 TEMPERATURE=0.7
 TOP_K=3

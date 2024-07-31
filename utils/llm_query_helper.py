@@ -16,9 +16,9 @@ def calculate_result_per_question(model_name, question, prompt, final_result, er
         error_dataset: updated error_dataset
     """
     # uncomment only for gpt models
-#     client = OpenAI(
-#     api_key=os.environ["OPENAI_API_KEY"],  # this is also the default, it can be omitted
-# )
+    client = OpenAI(
+    api_key=os.environ["OPENAI_API_KEY"],  # this is also the default, it can be omitted
+)
 
     # run model api and get response
     max_tokens = 2000 if use_cot else 400

@@ -55,11 +55,11 @@ args = parser.parse_args()
 ############### READ DATA ################
 error_log_file = args.input_file.replace('.json', '_error_log.log')
 # rewrite error_log_file
-with open(error_log_file, 'w') as f:
+with open(error_log_file, 'w', encoding='utf-8', errors='ignore') as f:
     f.write("")
 
 # read all the json files
-with open(osp.join(args.input_file), "r") as f:
+with open(osp.join(args.input_file), "r", encoding="utf-8", errors="ignore") as f:
     data = json.load(f)
 print("====\nInformation included in the json results: ", list(data.keys()))
 print("====\nHyperparameters: ", data['hyperparameters'])
@@ -80,6 +80,7 @@ PROFESSIONAL_LAW = "Professional_Law"
 BUSINESS_ETHICS = "Business_Ethics"
 STRATEGY_QA = "strategyQA"
 FINANCIAL = "Financial_PhraseBank"      
+REUTERS = "ReutersNews"  
 
 # the options are different for different datasets
 # used to extract the specific answers for checking whether the LLM has replied correctly or not (sometimes the LLM may reply with the true answer rather than the option letter we want e.g. "A" "B")
@@ -109,6 +110,7 @@ extract_options = {
     BUSINESS_ETHICS: lambda hint_value, _: {chr(ord('A') + idx): option for idx, option in enumerate(hint_value['real_answer']['options'])},
     PROFESSIONAL_LAW: lambda hint_value, _: {chr(ord('A') + idx): option for idx, option in enumerate(hint_value['real_answer']['options'])},
     FINANCIAL: lambda *_: {"A": "negative", "B": "neutral", "C":"positive"},
+    REUTERS: lambda *_: {},
 }.get(args.dataset_name, lambda *_: {})
 
 ################# MAIN FUNCTION FOR CONSISTENCY_DRIVEN HINT RESPONSE #################
@@ -157,7 +159,7 @@ for question, answer in result_data.items():
         hint_entries[hint_key] = hint_value.get('hint_entry', "")
 
         if extracted_answer is None or extracted_conf is None:
-            with open(error_log_file, 'a') as f:
+            with open(error_log_file, 'a', encoding='utf-8', errors='ignore') as f:
                 f.write(f"Something went wrong with: {question}\n{hint_response}\n")
                 f.write(f"-"*60 + "\n")
             continue
@@ -255,5 +257,5 @@ params = vars(args)
 
 final_json = {'hyperparameters': params, 'sample_tested': len(processed_data), 'error_count':len(error_questions), 'processed_data': processed_data, 'error_questions': error_questions}
 #%%
-with open(args.input_file.replace('.json', '_processed.json'),'w') as f:
+with open(args.input_file.replace('.json', '_processed.json'), 'w', encoding='utf-8') as f:
     f.write(json.dumps(final_json, indent=4))

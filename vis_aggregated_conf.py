@@ -124,15 +124,9 @@ with open(result_file_error_log, "a") as f:
 #%%
 ############### EXTRA INFORMATION FROM RESULTS ####################
 
-if args.dataset_name in ["BigBench_DateUnderstanding"]:
-    normal_option_list =  ["A", "B", "C", "D", "E", "F", "G"]
-elif args.dataset_name in ["Professional_Law", "Business_Ethics"]:
-    normal_option_list = ["A", "B", "C", "D"]
-elif args.dataset_name in ["sportUND", "strategyQA", "StrategyQA", "Bigbench_strategyQA", "BigBench_sportUND", "BigBench_strategyQA"]:
-    normal_option_list = ["A", "B"]
-elif args.dataset_name in ["GSM8K", "BigBench_ObjectCounting"]:
-    normal_option_list = None
-elif args.dataset_name in ["Financial_PhraseBank"]:
+if args.dataset_name in ["Financial_PhraseBank"]:
+    normal_option_list = ["A", "B", "C"]
+elif args.dataset_name in ["ReutersNews"]:
     normal_option_list = ["A", "B", "C"]
 else:
     raise NotImplementedError(f"Please specify the normal_option_list for this dataset {args.dataset_name}")
