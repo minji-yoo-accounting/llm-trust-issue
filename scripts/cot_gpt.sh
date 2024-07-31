@@ -72,13 +72,13 @@ python3 ../extract_answers.py \
 
 RESULT_FILE_PROCESSED=$(echo $RESULT_FILE | sed 's/\.json$/_processed.json/')
 
-python3 ../vis_aggregated_conf.py \
-    --input_file $RESULT_FILE_PROCESSED \
-    --model_name  $MODEL_NAME \
-    --dataset_name  $DATASET_NAME \
-    --task_type  $TASK_TYPE   \
-    --prompt_type $PROMPT_TYPE  \
-    --sampling_type $SAMPLING_TYPE \
-    --num_ensemble $NUM_ENSEMBLE \
-    --num_K $TOP_K \
-    $USE_COT_FLAG    
+# python3 ../vis_aggregated_conf.py \
+#     --input_file $RESULT_FILE_PROCESSED \
+#     --model_name  $MODEL_NAME \
+#     --dataset_name  $DATASET_NAME \
+#     --task_type  $TASK_TYPE   \
+#     --prompt_type $PROMPT_TYPE  \
+#     --sampling_type $SAMPLING_TYPE \
+#     --num_ensemble $NUM_ENSEMBLE \
+#     --num_K $TOP_K \
+#     $USE_COT_FLAG    
