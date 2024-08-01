@@ -1,0 +1,11 @@
+No `final answer and confidence` match found. extracted_answer: None, extracted_conf: None
+Something went wrong with: REG-db x-trackers II iBoxx $ Treasuries 1-3 Total Return Index ETF Net Asset Value(s)<042945889X.LU>
+Options: (A) negative  (B) neutral  (C) positive  
+Explanation: The news about the net asset value of the ETF could positively influence the stock price as it indicates the fund's performance and attractiveness to potential investors.
+Answer and Confidence (C), 85%
+------------------------------------------------------------
+No `final answer and confidence` match found. extracted_answer: None, extracted_conf: None
+Something went wrong with: The Quick Brown Fox Jumps over the Lazy Dog
+Options: (A) negative  (B) neutral  (C) positive  
+Answer: B, 50%
+------------------------------------------------------------
