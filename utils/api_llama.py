@@ -7,16 +7,16 @@ from transformers import AutoTokenizer, pipeline
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-# Load the tokenizer and model using the pipeline method
-model_name = "meta-llama/Llama-2-7b-hf"
-tokenizer = AutoTokenizer.from_pretrained(model_name)
-text_generation_pipeline = pipeline(
-    "text-generation",
-    model=model_name,
-    tokenizer=tokenizer,
-    device=0 if torch.cuda.is_available() else -1,
-    torch_dtype=torch.float16 if torch.cuda.is_available() else torch.float32,
-)
+# # Load the tokenizer and model using the pipeline method
+# model_name = "meta-llama/Llama-2-7b-hf"
+# tokenizer = AutoTokenizer.from_pretrained(model_name)
+# text_generation_pipeline = pipeline(
+#     "text-generation",
+#     model=model_name,
+#     tokenizer=tokenizer,
+#     device=0 if torch.cuda.is_available() else -1,
+#     torch_dtype=torch.float16 if torch.cuda.is_available() else torch.float32,
+# )
 
 
 
