@@ -1,0 +1,59 @@
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G2: B 80% P2: A 10% G3: C 10% P3: B 10%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: BRIEF-Melrose Industries says trading in line with expectations
+Options: (A) negative  (B) neutral  (C) positive  
+G2: B 80%
+P2: A 10%
+G3: C 10%
+P3: B 10%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G1: B, 30% P1: C, 50% G3: A, 20%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: Nigeria says to free all female Boko Haram suspects
+Options: (A) negative  (B) neutral  (C) positive  
+G1: B, 30%
+P1: C, 50%
+G3: A, 20%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G1: B, 40% P1: A, 30% G2: C, 30% P2: C, 40% G3: A, 30% P3: B, 30%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: Nigeria says to free all female Boko Haram suspects
+Options: (A) negative  (B) neutral  (C) positive  
+G1: B, 40%
+P1: A, 30%
+G2: C, 30%
+P2: C, 40%
+G3: A, 30%
+P3: B, 30%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G1: B 80% P1: C 15% G2: C 5% P2: A 0% G3: A 0% P3: B 0%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: BRIEF-Commercial Bank of Dubai repays $408 mln of govt support funds
+Options: (A) negative  (B) neutral  (C) positive  
+G1: B 80%
+P1: C 15%
+G2: C 5%
+P2: A 0%
+G3: A 0%
+P3: B 0%
+------------------------------------------------------------
