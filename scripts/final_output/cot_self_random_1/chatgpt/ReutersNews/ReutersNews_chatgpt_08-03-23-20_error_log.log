@@ -1,0 +1,5 @@
+No `final answer and confidence` match found. extracted_answer: None, extracted_conf: None
+Something went wrong with: The Quick Brown Fox Jumps over the Lazy Dog
+Options: (A) negative  (B) neutral  (C) positive  
+Answer: B, 50%
+------------------------------------------------------------
