@@ -1,0 +1,177 @@
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G1: B 90% P1: C 10% G2: A 0% P2: B 60% G3: C 40% P3: A 0%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: BRIEF-Oxford Instruments sees full-year performance broadly in-line with last year
+Options: (A) negative  (B) neutral  (C) positive  
+G1: B 90%
+P1: C 10%
+G2: A 0%
+P2: B 60%
+G3: C 40%
+P3: A 0%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G1: B 70% P1:  C 20% G3: A 10% P3:  A 10%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: BRIEF-Oxford Instruments sees full-year performance broadly in-line with last year
+Options: (A) negative  (B) neutral  (C) positive  
+G1: B 70%
+P1:  C 20%
+G3: A 10%
+P3:  A 10%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G1: B 80% P1: C 15% G2: A 5% P2:
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: BRIEF-Oxford Instruments sees full-year performance broadly in-line with last year
+Options: (A) negative  (B) neutral  (C) positive  
+G1: B 80%
+P1: C 15%
+G2: A 5%
+P2:
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G1: B 85% P1:  C15% G3: A 0% P3: B 0%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: BRIEF-Under Armour confirms US speed skating wants option to switch to earlier Under Armour suits
+Options: (A) negative  (B) neutral  (C) positive  
+G1: B 85%
+P1:  C15%
+G3: A 0%
+P3: B 0%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G1: B 80% P1:  C20% G3: A 0% P3: B 100%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: BRIEF-Under Armour confirms US speed skating wants option to switch to earlier Under Armour suits
+Options: (A) negative  (B) neutral  (C) positive  
+G1: B 80%
+P1:  C20%
+G3: A 0%
+P3: B 100%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1].
+Reponse: G1: B 70% P1:  C 20% G3: A 10% P3: 20%
+
+Extracted_answer: {0: None, 1: None, 2: 'A'}
+ extracted_conf: {0: None, 1: None, 2: 20.0}
+Something went wrong with: BRIEF-Under Armour confirms US speed skating wants option to switch to earlier Under Armour suits
+Options: (A) negative  (B) neutral  (C) positive  
+G1: B 70%
+P1:  C 20%
+G3: A 10%
+P3: 20%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G1: B 75% P1: C 20% G2: A 5% P2: A 80% G3: C 15% P3: B 5%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: BRIEF-Hexagon sells SwePart, cap loss of 1.5 mln EUR
+Options: (A) negative  (B) neutral  (C) positive  
+G1: B 75%
+P1: C 20%
+G2: A 5%
+P2: A 80%
+G3: C 15%
+P3: B 5%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G1: B, 40% P1: C, 30% G3: A, 30%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: BRIEF-Comcast submits 'public interest' filing to FCC on merger
+Options: (A) negative  (B) neutral  (C) positive  
+G1: B, 40%
+P1: C, 30%
+G3: A, 30%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G1: B 95% P1: C 5% G2: A 0% P2: B 0% G3: C 0% P3: A 0%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: BRIEF-Comcast submits 'public interest' filing to FCC on merger
+Options: (A) negative  (B) neutral  (C) positive  
+G1: B 95%
+P1: C 5%
+G2: A 0%
+P2: B 0%
+G3: C 0%
+P3: A 0%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G1: B 90% P1:  C 5% G2: A 5% P2: A 5% G3: C 5% P3: B 90%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: BRIEF-Comcast submits 'public interest' filing to FCC on merger
+Options: (A) negative  (B) neutral  (C) positive  
+G1: B 90%
+P1:  C 5%
+G2: A 5%
+P2: A 5%
+G3: C 5%
+P3: B 90%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0].
+Reponse: G2: C P1: 60% G2: B P2: 30% G3: A P3: 10%
+
+Extracted_answer: {0: None, 1: 'B', 2: 'A'}
+ extracted_conf: {0: None, 1: 30.0, 2: 10.0}
+Something went wrong with: Genelux Corporation CEO, Dr. Aladar A. Szalay, to Give a Keynote Lecture at the 8th International Conference on Oncolytic Virus Therapeutics
+Options: (A) negative  (B) neutral  (C) positive  
+G2: C
+P1: 60%
+G2: B
+P2: 30%
+G3: A
+P3: 10%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G1: B, 30% P1: C, 30% G3: A, 40% P3: A, 40%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: Banimmo : Interim statement - Evolution of the activity as at March 31, 2014
+Options: (A) negative  (B) neutral  (C) positive  
+G1: B, 30%
+P1: C, 30%
+G3: A, 40%
+P3: A, 40%
+------------------------------------------------------------
