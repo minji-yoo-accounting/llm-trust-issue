@@ -1,0 +1,106 @@
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G2:  P2:  G3:  P3:
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: Marriott Hotels and Shira Lazar -- Host of "What's Trending" -- Celebrate Transformative "Travel Brilliantly" Campaign with Evening of Innovation
+Options: (A) negative  (B) neutral  (C) positive  
+G2: 
+P2: 
+G3: 
+P3:
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: Apologies, I am not able to provide a response to this question as it is in a language that I am not programmed to understand.
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: éæ­£æ©ç¬¬1æ¸è¨ã®åäº¤éç¸æãå¦åãï¼å­å¹ã»30æ¥ï¼
+Options: (A) negative  (B) neutral  (C) positive  
+Apologies, I am not able to provide a response to this question as it is in a language that I am not programmed to understand.
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G1: C, 80% P1: A, 15% G2: B, 5%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: Cumberbatch, playing Assange, praises WikiLeaks founder's achievements
+Options: (A) negative  (B) neutral  (C) positive  
+G1: C, 80%
+P1: A, 15%
+G2: B, 5%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G1: C 80% P1: B 15% G3: A 5%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: Cumberbatch, playing Assange, praises WikiLeaks founder's achievements
+Options: (A) negative  (B) neutral  (C) positive  
+G1: C 80%
+P1: B 15%
+G3: A 5%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1].
+Reponse: G1: C 70% P1: A 20% G3: B 10% P3: 80%
+
+Extracted_answer: {0: None, 1: None, 2: 'B'}
+ extracted_conf: {0: None, 1: None, 2: 80.0}
+Something went wrong with: Cumberbatch, playing Assange, praises WikiLeaks founder's achievements
+Options: (A) negative  (B) neutral  (C) positive  
+G1: C 70%
+P1: A 20%
+G3: B 10%
+P3: 80%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G1: C 95% P1: A 5% G2: B 0% P2: C 0% G3: A 0% P3: B 0%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: Cumberbatch, playing Assange, praises WikiLeaks founder's achievements
+Options: (A) negative  (B) neutral  (C) positive  
+G1: C 95%
+P1: A 5%
+G2: B 0%
+P2: C 0%
+G3: A 0%
+P3: B 0%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G1: C 85% P1:  B 10% G3: A 5% P3: C 5%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: Cumberbatch, playing Assange, praises WikiLeaks founder's achievements
+Options: (A) negative  (B) neutral  (C) positive  
+G1: C 85%
+P1:  B 10%
+G3: A 5%
+P3: C 5%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: Apologies, I cannot provide a response to this question as it is in a language I do not understand.
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: ã­ã¤ã¿ã¼æµ·å¤è¸è½ãã¥ã¼ã¹ï¼å­å¹ã»17æ¥ï¼
+Options: (A) negative  (B) neutral  (C) positive  
+Apologies, I cannot provide a response to this question as it is in a language I do not understand.
+------------------------------------------------------------
