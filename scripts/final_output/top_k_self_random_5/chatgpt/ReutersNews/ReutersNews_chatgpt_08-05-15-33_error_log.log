@@ -1,0 +1,166 @@
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: Step 1: Debiopharm Group moving forward with oncology clinical programs and presenting progress at an important conference like ASCO could be seen as a positive sign of development and potential success in their research and development efforts.  Step 2: Investors are likely to view this news as a positive development, indicating progress and potential future success in the company's oncology programs.  Step 3: Positive  P1: 90% P2: 5% P3: 5%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: Debiopharm Groupâ¢ Moves Forward Three of Its Oncology Clinical Programs and Will Present the Recent Progresses at the 50th American Society of Clinical Oncology (ASCO) Annual Meeting
+Options: (A) negative  (B) neutral  (C) positive  
+Step 1: Debiopharm Group moving forward with oncology clinical programs and presenting progress at an important conference like ASCO could be seen as a positive sign of development and potential success in their research and development efforts.
+
+Step 2: Investors are likely to view this news as a positive development, indicating progress and potential future success in the company's oncology programs.
+
+Step 3: Positive
+
+P1: 90%
+P2: 5%
+P3: 5%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: 1. Increased global confidence is generally seen as a positive sign for the economy, which could lead to increased investment and business growth. 2. Positive 3. 85%  1. This news may lead to increased investment in businesses and expansion, which would likely have a positive impact on stock prices. 2. Positive 3. 80%  1. Global confidence could lead to increased consumer spending, which would benefit businesses and potentially boost stock prices. 2. Positive 3. 75%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: Increased global confidence boosts entrepreneurs' hiring plans
+Options: (A) negative  (B) neutral  (C) positive  
+1. Increased global confidence is generally seen as a positive sign for the economy, which could lead to increased investment and business growth.
+2. Positive
+3. 85%
+
+1. This news may lead to increased investment in businesses and expansion, which would likely have a positive impact on stock prices.
+2. Positive
+3. 80%
+
+1. Global confidence could lead to increased consumer spending, which would benefit businesses and potentially boost stock prices.
+2. Positive
+3. 75%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: 1. Aetna CEO says 2015 Obamacare rates to rise less than 20 pct would positively influence the stock price, as it indicates a potential cost control and better financial performance for the company. 2. A: 20% 3. B: 30% 4. C: 50%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: UPDATE 1-Aetna CEO says 2015 Obamacare rates to rise less than 20 pct
+Options: (A) negative  (B) neutral  (C) positive  
+1. Aetna CEO says 2015 Obamacare rates to rise less than 20 pct would positively influence the stock price, as it indicates a potential cost control and better financial performance for the company.
+2. A: 20%
+3. B: 30%
+4. C: 50%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: Step 1: Top films typically indicate strong consumer interest and potential for high box office sales, which could positively influence the stock price of film production companies. Step 2: The box office success of films is often seen as a positive indicator for the entertainment industry as a whole. Step 3: Positive P1: 70% G1: C P2: 20% G2: B P3: 10% G3: A
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: The top films at the North American box office
+Options: (A) negative  (B) neutral  (C) positive  
+Step 1: Top films typically indicate strong consumer interest and potential for high box office sales, which could positively influence the stock price of film production companies.
+Step 2: The box office success of films is often seen as a positive indicator for the entertainment industry as a whole.
+Step 3: Positive
+P1: 70%
+G1: C
+P2: 20%
+G2: B
+P3: 10%
+G3: A
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: 1. The update on significant progress at the Danakhil Project is a positive sign for the company, indicating growth and potential success. 2. Positive 3. 90%  1. The project update may indicate potential setbacks or challenges, causing a negative impact on the stock price. 2. Negative 3. 20%  1. The project update may not have a significant impact on the stock price, as it may be considered as part of regular operations. 2. Neutral 3. 10%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: Allana Potash Provides Project Update- Significant Progress Continues at Its Danakhil Project
+Options: (A) negative  (B) neutral  (C) positive  
+1. The update on significant progress at the Danakhil Project is a positive sign for the company, indicating growth and potential success.
+2. Positive
+3. 90%
+
+1. The project update may indicate potential setbacks or challenges, causing a negative impact on the stock price.
+2. Negative
+3. 20%
+
+1. The project update may not have a significant impact on the stock price, as it may be considered as part of regular operations.
+2. Neutral
+3. 10%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0].
+Reponse: Step 1: MELA Sciences beginning the insurance reimbursement process with a new CPT code could potentially increase the accessibility and affordability of their MelaFind System, which could be seen as a positive development for the company and its stock price.  Step 2: This news is likely to positively influence the stock price as it indicates a potential increase in sales and market reach for the MelaFind System.  Step 3: A P1: 80% G2: C P2: 15% G3: B P3: 5%
+
+Extracted_answer: {0: None, 1: 'C', 2: 'B'}
+ extracted_conf: {0: None, 1: 15.0, 2: 5.0}
+Something went wrong with: MELA Sciences Begins Insurance Reimbursement Process With Application for New CPT Code for the MelaFind System
+Options: (A) negative  (B) neutral  (C) positive  
+Step 1: MELA Sciences beginning the insurance reimbursement process with a new CPT code could potentially increase the accessibility and affordability of their MelaFind System, which could be seen as a positive development for the company and its stock price.
+
+Step 2: This news is likely to positively influence the stock price as it indicates a potential increase in sales and market reach for the MelaFind System.
+
+Step 3: A
+P1: 80%
+G2: C
+P2: 15%
+G3: B
+P3: 5%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: 1. Iron ore prices tend to be positively influenced by strong GDP data, as it indicates potential increase in demand for construction and infrastructure projects. 2. Positive 3. 90%  1. The news of Dalian iron ore holding near a 7-week high indicates stability in the market, which could positively influence the stock price. 2. Positive 3. 80%  1. The news may have little impact on the stock price as it is already factored into the market. 2. Neutral 3. 50%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: UPDATE 1-Dalian iron ore holds near 7-week high after firm GDP
+Options: (A) negative  (B) neutral  (C) positive  
+1. Iron ore prices tend to be positively influenced by strong GDP data, as it indicates potential increase in demand for construction and infrastructure projects.
+2. Positive
+3. 90%
+
+1. The news of Dalian iron ore holding near a 7-week high indicates stability in the market, which could positively influence the stock price.
+2. Positive
+3. 80%
+
+1. The news may have little impact on the stock price as it is already factored into the market.
+2. Neutral
+3. 50%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: Step 1: I do not understand the given question as it is in Japanese and I do not have context on "ã°ã¼ã°ã«" or "æ¸ç±å®éãµã¼ãã¹". Therefore, I cannot provide accurate guesses or probabilities.  Final Answer:  I cannot provide a valid answer without understanding the question and context.
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: ã°ã¼ã°ã«ãæ¸ç±å®éãµã¼ãã¹ãéå§ãã¢ãã¾ã³ã«å¯¾æï¼å­å¹ã»8æ¥ï¼
+Options: (A) negative  (B) neutral  (C) positive  
+Step 1: I do not understand the given question as it is in Japanese and I do not have context on "ã°ã¼ã°ã«" or "æ¸ç±å®éãµã¼ãã¹". Therefore, I cannot provide accurate guesses or probabilities.
+
+Final Answer: 
+I cannot provide a valid answer without understanding the question and context.
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: 1. The popularity of a country's leader climbing is generally seen as a positive sign for the country's stability and potential for economic growth. 2. Positive P1: 80% 3. Neutral P3: 15% 3. Negative P3: 5%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: Popularity of Peru's Humala climbs for second straight month
+Options: (A) negative  (B) neutral  (C) positive  
+1. The popularity of a country's leader climbing is generally seen as a positive sign for the country's stability and potential for economic growth.
+2. Positive
+P1: 80%
+3. Neutral
+P3: 15%
+3. Negative
+P3: 5%
+------------------------------------------------------------
