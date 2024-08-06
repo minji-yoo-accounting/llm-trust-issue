@@ -1,0 +1,216 @@
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G1: C 85% P1: B 10% G3: A 5%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: Cogeco Cable Completes the Issuance of US$175 Million Senior Secured Notes
+Options: (A) negative  (B) neutral  (C) positive  
+G1: C 85%
+P1: B 10%
+G3: A 5%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1].
+Reponse: G1: C 70% P1:  B 20% G3: A 10% P3: 20%
+
+Extracted_answer: {0: None, 1: None, 2: 'A'}
+ extracted_conf: {0: None, 1: None, 2: 20.0}
+Something went wrong with: Cogeco Cable Completes the Issuance of US$175 Million Senior Secured Notes
+Options: (A) negative  (B) neutral  (C) positive  
+G1: C 70%
+P1:  B 20%
+G3: A 10%
+P3: 20%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0].
+Reponse: G1: C 70% P1:  B 20% G2: A 10% P2: 30% G3: B 5% P3: 50%
+
+Extracted_answer: {0: None, 1: 'A', 2: 'B'}
+ extracted_conf: {0: None, 1: 30.0, 2: 50.0}
+Something went wrong with: Cumberbatch takes unsung WWII hero to Toronto in 'Imitation Game'
+Options: (A) negative  (B) neutral  (C) positive  
+G1: C 70%
+P1:  B 20%
+G2: A 10%
+P2: 30%
+G3: B 5%
+P3: 50%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G1: B 80% P1:  C: 10% G3: A 10% P3: A: 10%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: BRIEF-Malteries Franco Belges reports flat FY net income of 4 mln euros
+Options: (A) negative  (B) neutral  (C) positive  
+G1: B 80%
+P1:  C: 10%
+G3: A 10%
+P3: A: 10%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1].
+Reponse: G1: B  45% P1:  C  35% G3: A  20% P3:  20%
+
+Extracted_answer: {0: None, 1: None, 2: 'A'}
+ extracted_conf: {0: None, 1: None, 2: 20.0}
+Something went wrong with: BRIEF-Dazhou Xingye's board approves plan to change name, adjust business focus
+Options: (A) negative  (B) neutral  (C) positive  
+G1: B  45%
+P1:  C  35%
+G3: A  20%
+P3:  20%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G1: B 90% P1:  C 80% G2: A 20% P2: B 15% G3: C 10% P3: A 5%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: BRIEF-Dazhou Xingye's board approves plan to change name, adjust business focus
+Options: (A) negative  (B) neutral  (C) positive  
+G1: B 90%
+P1:  C 80%
+G2: A 20%
+P2: B 15%
+G3: C 10%
+P3: A 5%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1].
+Reponse: G1: B 85% P1:  A 10% G3: C 5% P3: 5%
+
+Extracted_answer: {0: None, 1: None, 2: 'C'}
+ extracted_conf: {0: None, 1: None, 2: 5.0}
+Something went wrong with: BRIEF-Leoni has no plans now to sell non-core business -CEO
+Options: (A) negative  (B) neutral  (C) positive  
+G1: B 85%
+P1:  A 10%
+G3: C 5%
+P3: 5%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G1: B 80% P1:  C 15% G2: A 5% P2: A 5% G3: C 0% P3: B 0%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: BRIEF-Leoni has no plans now to sell non-core business -CEO
+Options: (A) negative  (B) neutral  (C) positive  
+G1: B 80%
+P1:  C 15%
+G2: A 5%
+P2: A 5%
+G3: C 0%
+P3: B 0%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G1: B 85% P1:  C15% G2: A 5% P2: B 10% G3: C 0% P3: A 0%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: BRIEF-SSE Opportunity fund sells about 10 pct shares in Oniva Online Group to Richard GÃ¶ransson
+Options: (A) negative  (B) neutral  (C) positive  
+G1: B 85%
+P1:  C15%
+G2: A 5%
+P2: B 10%
+G3: C 0%
+P3: A 0%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G1: B 80% P1: C 15% G2: A 5% P2: A 70% G3: C 5% P3: B 10%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: BRIEF-S.Africa competition watchdog recommends Denel Soc-Bae Systems merger
+Options: (A) negative  (B) neutral  (C) positive  
+G1: B 80%
+P1: C 15%
+G2: A 5%
+P2: A 70%
+G3: C 5%
+P3: B 10%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G1: B 70% P1:  C 20% G3: A 10% P3:  B 90%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: BRIEF-China's ZTE gets association's approval to issue 9 bln yuan medium-term notes
+Options: (A) negative  (B) neutral  (C) positive  
+G1: B 70%
+P1:  C 20%
+G3: A 10%
+P3:  B 90%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G1: B 96% P1:  C 3% G3: A 1%   P3: A 1%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: BRIEF-China's ZTE gets association's approval to issue 9 bln yuan medium-term notes
+Options: (A) negative  (B) neutral  (C) positive  
+G1: B 96%
+P1:  C 3%
+G3: A 1%  
+P3: A 1%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G1: B, 40% P1:  A, 30% G3: C, 30% P3:  B, 20%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: BRIEF-Philippines' DMCI sells shares in tollway operator to San Miguel for $41 mln
+Options: (A) negative  (B) neutral  (C) positive  
+G1: B, 40%
+P1:  A, 30%
+G3: C, 30%
+P3:  B, 20%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: I'm sorry, I cannot provide an accurate answer as the question seems to be in Japanese and I am unable to translate it.
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: ç¹é2015å¹´ã®è¦ç¹ï¼åæ²¹å®ãç¸å ´ã«ãããããªã¹ã¯ã¨ã¯ï¼25æ¥ï¼
+Options: (A) negative  (B) neutral  (C) positive  
+I'm sorry, I cannot provide an accurate answer as the question seems to be in Japanese and I am unable to translate it.
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G1: B 85% P1:  C 10% G3: A 5% P3: B 5%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: BRIEF-Beijing Hualian Dept Store to set up commercial management unit in Singapore
+Options: (A) negative  (B) neutral  (C) positive  
+G1: B 85%
+P1:  C 10%
+G3: A 5%
+P3: B 5%
+------------------------------------------------------------
