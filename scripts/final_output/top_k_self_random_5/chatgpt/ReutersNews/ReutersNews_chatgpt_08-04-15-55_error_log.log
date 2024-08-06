@@ -1,0 +1,319 @@
+
+
+Top-1 ERROR for: [0, 1].
+Reponse: G1: B, 40% P1: C, 30% G3: A, 30% P3: 25%
+
+Extracted_answer: {0: None, 1: None, 2: 'A'}
+ extracted_conf: {0: None, 1: None, 2: 25.0}
+Something went wrong with: BRIEF-Shenyin Wanguo clarifies media reports on possible merger with a securities firm
+Options: (A) negative  (B) neutral  (C) positive  
+G1: B, 40%
+P1: C, 30%
+G3: A, 30%
+P3: 25%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G1: B, 40% P1: A, 30% G3: C, 30% P3: B, 30%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: BRIEF-Shenyin Wanguo clarifies media reports on possible merger with a securities firm
+Options: (A) negative  (B) neutral  (C) positive  
+G1: B, 40%
+P1: A, 30%
+G3: C, 30%
+P3: B, 30%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0].
+Reponse: G2: A P1: 30% G2: B P2: 50% G3: C P3: 20%
+
+Extracted_answer: {0: None, 1: 'B', 2: 'C'}
+ extracted_conf: {0: None, 1: 50.0, 2: 20.0}
+Something went wrong with: E2open to Present with Avnet Technology Solutions at Supply Chain and Logistics Summit North America 2013
+Options: (A) negative  (B) neutral  (C) positive  
+G2: A
+P1: 30%
+G2: B
+P2: 50%
+G3: C
+P3: 20%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G1: B, 40% P1: A, 30% G2: C, 30% P2: B, 40% G3: A, 30% P3: C, 30%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: BRIEF-Tingyi Cayman Islands says co and TZCI entered supply agreement on Nov 15
+Options: (A) negative  (B) neutral  (C) positive  
+G1: B, 40%
+P1: A, 30%
+G2: C, 30%
+P2: B, 40%
+G3: A, 30%
+P3: C, 30%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G1: B, 40% P1: A, 30% G3: C, 30% P3: B, 30%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: BRIEF-Tingyi Cayman Islands says co and TZCI entered supply agreement on Nov 15
+Options: (A) negative  (B) neutral  (C) positive  
+G1: B, 40%
+P1: A, 30%
+G3: C, 30%
+P3: B, 30%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G1: B 80% P1: C 15% G2: C 5% P2: A 0% G3: A 0% P3: B 0%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: BRIEF-Tingyi Cayman Islands says co and TZCI entered supply agreement on Nov 15
+Options: (A) negative  (B) neutral  (C) positive  
+G1: B 80%
+P1: C 15%
+G2: C 5%
+P2: A 0%
+G3: A 0%
+P3: B 0%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G1: B, 60% P1:  A, 20% G2: C, 20% P2:  B, 40% G3: A, 10% P3: C, 30%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: BRIEF-Supercom & OTI agree to extend the due diligence period of the OTI Smartid acquisition
+Options: (A) negative  (B) neutral  (C) positive  
+G1: B, 60%
+P1:  A, 20%
+G2: C, 20%
+P2:  B, 40%
+G3: A, 10%
+P3: C, 30%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1].
+Reponse: G1: B, 40% P1: A, 30% G3: C, 30% P3: 30%
+
+Extracted_answer: {0: None, 1: None, 2: 'C'}
+ extracted_conf: {0: None, 1: None, 2: 30.0}
+Something went wrong with: BRIEF-Supercom & OTI agree to extend the due diligence period of the OTI Smartid acquisition
+Options: (A) negative  (B) neutral  (C) positive  
+G1: B, 40%
+P1: A, 30%
+G3: C, 30%
+P3: 30%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G1: B, 40% P1:  A, 30% G2: C, 30% P2:  B, 70% G3: A, 30% P3: C, 30%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: BRIEF-Supercom & OTI agree to extend the due diligence period of the OTI Smartid acquisition
+Options: (A) negative  (B) neutral  (C) positive  
+G1: B, 40%
+P1:  A, 30%
+G2: C, 30%
+P2:  B, 70%
+G3: A, 30%
+P3: C, 30%
+------------------------------------------------------------
+
+
+Match error for: [2].
+Reponse: G1: C P1: 70% G2: B P2: 20% G2: A P2: 10%
+
+Extracted_answer: {0: 'C', 1: 'B', 2: None}
+ extracted_conf: {0: 70.0, 1: 20.0, 2: None}
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G1: B 85% P1: C 10% G3: A 5%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: BRIEF-Coca Cola-Femsa places $2.15 bln of senior notes in the international capital markets
+Options: (A) negative  (B) neutral  (C) positive  
+G1: B 85%
+P1: C 10%
+G3: A 5%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G1: B 80% P1:  C 15% G3: A 5% P3: B 75%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: BRIEF-Coca Cola-Femsa places $2.15 bln of senior notes in the international capital markets
+Options: (A) negative  (B) neutral  (C) positive  
+G1: B 80%
+P1:  C 15%
+G3: A 5%
+P3: B 75%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G1: B 80% P1: C 15% G2: A 5% P2: A 20% G3: C 5% P3: B 70%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: BRIEF-Shanghai Shimao's Qingdao unit to sell property project for 559 mln yuan
+Options: (A) negative  (B) neutral  (C) positive  
+G1: B 80%
+P1: C 15%
+G2: A 5%
+P2: A 20%
+G3: C 5%
+P3: B 70%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G1: B 85% P1: A 10% G3: C 5%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: BRIEF-Kofax prices NASDAQ offering at $5.85 per share
+Options: (A) negative  (B) neutral  (C) positive  
+G1: B 85%
+P1: A 10%
+G3: C 5%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0].
+Reponse: G2: C P1: 25% G2: B P2: 60% G3: A P3: 15%
+
+Extracted_answer: {0: None, 1: 'B', 2: 'A'}
+ extracted_conf: {0: None, 1: 60.0, 2: 15.0}
+Something went wrong with: Principal Enterprise Capital Announces Two New Hires
+Options: (A) negative  (B) neutral  (C) positive  
+G2: C
+P1: 25%
+G2: B
+P2: 60%
+G3: A
+P3: 15%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G1: B, 60% P1: C, 30% G2: A, 10% P2: B, 40% G3: C, 5% P3: A, 5%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: BRIEF-Guizhou Yibai Pharma gets regulatory approval to issue up to 58.6 mln new shares in private placement
+Options: (A) negative  (B) neutral  (C) positive  
+G1: B, 60%
+P1: C, 30%
+G2: A, 10%
+P2: B, 40%
+G3: C, 5%
+P3: A, 5%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G1: C, 80% P1: B, 15% G3: A, 5%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: Coup-leader president's candidate poised to win Madagascar vote
+Options: (A) negative  (B) neutral  (C) positive  
+G1: C, 80%
+P1: B, 15%
+G3: A, 5%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G1: C, 70% P1: B, 20% G3: A, 10%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: Coup-leader president's candidate poised to win Madagascar vote
+Options: (A) negative  (B) neutral  (C) positive  
+G1: C, 70%
+P1: B, 20%
+G3: A, 10%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G1: C, 60% P1: A, 20% G2: B, 20% P2: C, 30% G3: A, 10% P3: B, 50%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: Coup-leader president's candidate poised to win Madagascar vote
+Options: (A) negative  (B) neutral  (C) positive  
+G1: C, 60%
+P1: A, 20%
+G2: B, 20%
+P2: C, 30%
+G3: A, 10%
+P3: B, 50%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0].
+Reponse: G2: B P1: 30% G2: C P2: 50% G3: A P3: 20%
+
+Extracted_answer: {0: None, 1: 'C', 2: 'A'}
+ extracted_conf: {0: None, 1: 50.0, 2: 20.0}
+Something went wrong with: PubMatic Launches Japan's First Independent, Global Sell Side Platform, Forms Strategic Partnership with So-Net Media Networks
+Options: (A) negative  (B) neutral  (C) positive  
+G2: B
+P1: 30%
+G2: C
+P2: 50%
+G3: A
+P3: 20%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1].
+Reponse: G1: B 85% P1: C 10% G2: C 5% P2: A 5% G3: A 0% P3: 0%
+
+Extracted_answer: {0: None, 1: None, 2: 'A'}
+ extracted_conf: {0: None, 1: None, 2: 0.0}
+Something went wrong with: BRIEF-Electrolux CEO says European market to grow 0-2 pct 2014
+Options: (A) negative  (B) neutral  (C) positive  
+G1: B 85%
+P1: C 10%
+G2: C 5%
+P2: A 5%
+G3: A 0%
+P3: 0%
+------------------------------------------------------------
+
+
+Top-1 ERROR for: [0, 1, 2].
+Reponse: G1: B 95% P1: A 5% G3: C 0% P3: A 0%
+
+Extracted_answer: {0: None, 1: None, 2: None}
+ extracted_conf: {0: None, 1: None, 2: None}
+Something went wrong with: BRIEF-Electrolux CEO says European market to grow 0-2 pct 2014
+Options: (A) negative  (B) neutral  (C) positive  
+G1: B 95%
+P1: A 5%
+G3: C 0%
+P3: A 0%
+------------------------------------------------------------
