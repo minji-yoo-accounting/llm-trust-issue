@@ -4,7 +4,7 @@ Code repository for the paper "How Much Should We Trust LLM-Based Measures for A
 
 Paper: [Add SSRN Link]
 
-Author: [Minji Yoo] (The Wharton School, University of Pennsylvania)
+Author: Minji Yoo (The Wharton School, University of Pennsylvania)
 
 ## 01 Paper Summary
 
