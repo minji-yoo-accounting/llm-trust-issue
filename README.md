@@ -17,11 +17,12 @@ To address these questions, I conduct experiments using ChatGPT on sentiment ana
 
 The paper proposes alternative methods to mitigate this issue. A modified prompt strategy from artificial intelligence literature reduces the overconfidence gap to 19\%, while a fine-tuning approach that directly retrieves the probability of predicted labels from the model, instead of relying on self-reported confidence scores, effectively eliminates overconfidence. Furthermore, smaller non-generative LLMs, such as RoBERTa, do not exhibit the overconfidence problem and outperform prompted ChatGPT in both calibration and failure prediction when finetuned. 
 
+
+![Summary of Results](summary.png)
+
 Finally, the paper demonstrates how empirical analysis can be influenced by the methods used to obtain confidence scores.
 
 
-
-![Summary of Results](summary.png)
 
 
 ## 02 Quick Guide to Experiments
