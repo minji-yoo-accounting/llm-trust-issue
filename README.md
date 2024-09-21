@@ -46,9 +46,19 @@ Fourth, I further explore non-generative models as an alternative to generative 
 **Setting 6: Finetuning Non-generative Models**
 - Colab Notebook for finetuning RoBERTa and FinBERT [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1lVfRK2COCHEz1gdQ2fodA31wkNwJjIgL?usp=sharing)
 - Fine-tuned models can be found on my HuggingFace profile: [![Hugging Face](https://img.shields.io/badge/Hugging%20Face-Profile-yellow)](https://huggingface.co/minjiyoo)
-  Note: I am unable to share the fine-tuned ChatGPT model, as OpenAI retains ownership and it can only be accessed via their API.
 
-## 03 Discussions on prompting Llama2 (llama2-7b-chat-hf [![Hugging Face](https://img.shields.io/badge/Hugging%20Face-Profile-yellow)](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf))
+**Note**: I am unable to share the fine-tuned ChatGPT model, as OpenAI retains ownership and it can only be accessed via their API.
 
+
+## 03 Discussions on Llama2 (llama2-7b-chat-hf [![Hugging Face](https://img.shields.io/badge/Hugging%20Face-Profile-yellow)](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf))
+
+Llama 2 is an open-source generative LLM from Meta AI. In addition to ChatGPT, I also experimented with Llama 2 (7b-chat-hf model), but I chose not to report the results in the paper for the following reasons:
+
+- The model does not consistently follow instructions.
+- It suffers from repetition issues.
+- The model is not large enough to effectively handle Chain-of-Thought prompting.
+- Fine-tuning this model is resource-intensive.
+
+A larger version of the model (e.g., 70b instead of 7b) might not encounter these issues, but 7b is already too large to run efficiently on a single high-spec GPU (NVIDIA A100 80G), particularly for fine-tuning. Therefore, there is no practical advantage to using this "open-source" model in this context.  
 
 
