@@ -1,6 +1,6 @@
 How Much Should We Trust LLM-Based Measures for Accounting and Finance Research? 
 ==
-Code for the paper "How Much Should We Trust LLM-Based Measures for Accounting and Finance Research?" by Minji Yoo (The Wharton School, University of Pennsylvania)
+Code repository for the paper "How Much Should We Trust LLM-Based Measures for Accounting and Finance Research?" by Minji Yoo (The Wharton School, University of Pennsylvania)
 
 Paper: [Add SSRN Link]
 
