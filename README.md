@@ -25,7 +25,7 @@ Finally, the paper demonstrates how empirical analysis can be influenced by the 
 
 
 
-## 02 Quick Guide to Experiments
+## 02 Quick Guide to the Experiments
 
 LLMs possess vast knowledge from pre-training, which is conducted prior to their release. However, like people starting a new job, LLMs require additional training to perform specific tasks effectively. There are two primary methods for this: prompt engineering and fine-tuning. Prompt engineering involves crafting specific questions to elicit optimal responses from a model. Fine-tuning, on the other hand, involves further training the model on a specific task using labeled training data. This paper investigates the problem of overconfidence in LLMs in particular, which occurs when they make figurative claims about their confidence levels during prompt engineering. Since accounting and finance researchers often use these self-reported confidence scores to estimate the likelihood that a sample is correctly labeled, ensuring their reliability is essential for accurate research outcomes.
 
