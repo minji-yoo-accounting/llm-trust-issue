@@ -1,3 +1,9 @@
+How Much Should We Trust LLM-Based Measures for Accounting and Finance Research? 
+==
+Code for the paper "How Much Should We Trust LLM-Based Measures for Accounting and Finance Research?" by Minji Yoo (The Wharton School, University of Pennsylvania)
+
+Paper: [Add SSRN Link]
+
 [Under construction]
 In case of Llama2 model, you need to specify do_sampling in llm_query_helper.py 
 
