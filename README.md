@@ -50,14 +50,16 @@ Fourth, I further explore non-generative models as an alternative to generative 
 **Note**: I am unable to share the fine-tuned ChatGPT model, as OpenAI retains ownership and it can only be accessed via their API.
 
 
-## 03 Discussions on Llama2 (llama2-7b-chat-hf [![Hugging Face](https://img.shields.io/badge/Hugging%20Face-Profile-yellow)](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf))
+## 03 Discussions on Llama2 (llama2-7b-chat-hf)
 
-Llama 2 is an open-source generative LLM from Meta AI. In addition to ChatGPT, I also experimented with Llama 2 (7b-chat-hf model), but I chose not to report the results in the paper for the following reasons:
+Llama 2 is an open-source generative LLM from Meta AI. In addition to ChatGPT, I also experimented with Llama 2 (7b-chat-hf model [![Hugging Face](https://img.shields.io/badge/Hugging%20Face-Profile-yellow)](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf)), but I chose not to report the results in the paper for the following reasons:
 
 - The model does not consistently follow instructions.
 - It suffers from repetition issues.
 - The model is not large enough to effectively handle Chain-of-Thought prompting.
 - Fine-tuning this model is resource-intensive.
+
+Although the prompt message provides an answer format, the model does not consistently follow instructions and often hallucinates options that were not given. Repetition issues of Llama 2 are well-known (see also https://www.reddit.com/r/LocalLLaMA/comments/15ea9jl/extremely_repetitivedeterministic_content_over/ and https://www.reddit.com/r/LocalLLaMA/comments/155vy0k/llama_2_too_repetitive/). This can be controlled by setting 'repetition_penalty' = 1.15~1.2, but model responses are too sensitive to this parameter. Experimenting with Llama 2 model is documented in this Colab Notebook [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1bpxKhexJMDmQ4s97VLOfJ7aBg_sA890k?usp=sharing)    
 
 A larger version of the model (e.g., 70b instead of 7b) might not encounter these issues, but 7b is already too large to run efficiently on a single high-spec GPU (NVIDIA A100 80G), particularly for fine-tuning. Therefore, there is no practical advantage to using this "open-source" model in this context.  
 
