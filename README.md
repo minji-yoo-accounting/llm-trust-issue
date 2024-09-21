@@ -52,7 +52,7 @@ Fourth, I further explore non-generative models as an alternative to generative 
 
 ## 03 Discussions on Llama2 (llama2-7b-chat-hf)
 
-Llama 2 is an open-source generative LLM from Meta AI. In addition to ChatGPT, I also experimented with Llama 2 (7b-chat-hf model [![Hugging Face](https://img.shields.io/badge/Hugging%20Face-Profile-yellow)](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf)), but I chose not to report the results in the paper for the following reasons:
+Llama 2 is an open-source generative LLM from Meta AI. In addition to ChatGPT, I also experimented with Llama 2 ([7b-chat-hf model](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf)), but I chose not to report the results in the paper for the following reasons:
 
 - The model does not consistently follow instructions.
 - It suffers from repetition issues.
