@@ -6,3 +6,8 @@ Finetuning ChatGPT and Llama2:
 
 Finetuning RoBERTa and FinBERT:
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1lVfRK2COCHEz1gdQ2fodA31wkNwJjIgL?usp=sharing)
+
+Testing Finetuned models:
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1uQ9jc4SlK_zG892CMEY6Bvu9CZwZKrNb?usp=sharing)
+
+Finetuned models can be found here:[![Hugging Face](https://img.shields.io/badge/Hugging%20Face-Profile-yellow)](https://huggingface.co/minjiyoo)
