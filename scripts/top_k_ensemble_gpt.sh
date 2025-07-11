@@ -18,21 +18,21 @@ CONFIDENCE_TYPE="${PROMPT_TYPE}_${SAMPLING_TYPE}_${NUM_ENSEMBLE}"
 # TODO uncomment following lines to run on different settings
 #############################################################
 
-DATASET_NAME="Financial_PhraseBank"
-MODEL_NAME="o4-mini"
-TASK_TYPE="multi_choice_qa"
-DATASET_PATH="/Users/minjiyoo/Documents/GitHub/llm-trust-issue/bank.csv"
-USE_COT=false # use cot or not
-TEMPERATURE=0.7
-TOP_K=3
-
-# DATASET_NAME="ReutersNews"
-# MODEL_NAME="chatgpt"
+# DATASET_NAME="Financial_PhraseBank"
+# MODEL_NAME="o4-mini"
 # TASK_TYPE="multi_choice_qa"
-# DATASET_PATH="/content/llm-trust-issue/articles_subset7.csv"
+# DATASET_PATH="/Users/minjiyoo/Documents/GitHub/llm-trust-issue/bank.csv"
 # USE_COT=false # use cot or not
 # TEMPERATURE=0.7
 # TOP_K=3
+
+DATASET_NAME="ReutersNews"
+MODEL_NAME="o4-mini"
+TASK_TYPE="multi_choice_qa"
+DATASET_PATH="/content/drive/MyDrive/llm_trust/empirical_analysis/articles_subset1.csv"
+USE_COT=false # use cot or not
+TEMPERATURE=0.7
+TOP_K=3
 
 #############################################################
 # set time stamp to differentiate the output file
