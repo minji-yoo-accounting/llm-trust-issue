@@ -63,6 +63,10 @@ def calculate_result_per_question(model_name, question, prompt, final_result, er
                 response = client.chat.completions.create(model="gpt-4",  messages=[{'role':'user','content':prompt}], temperature=temperature, max_tokens=max_tokens)
                 orginal_anser = response["choices"][0]["message"]["content"]
                 
+            elif model_name.lower()  == 'o4-mini':
+                response = client.chat.completions.create(model="o4-mini", reasoning_effort="medium", messages=[{"role": "user","content": prompt}])
+                orginal_anser = response.choices[0].message.content
+            
             elif model_name.lower() == 'vicuna':
                 from utils.api_local import VicunaChatCompletion
                 orginal_anser = VicunaChatCompletion(prompt)
