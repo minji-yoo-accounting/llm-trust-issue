@@ -1,0 +1,18 @@
+sample size: 3446
+real_answer:neutral
+predicted_answer:place_holder
+predicted_conf:place_holder
+hint_answers:{'trail_0': 'C'}
+hint_confs:{'trail_0': 90.0}
+hint_responses:{'trail_0': 'Explanation: \n1. The company is experiencing growth in Russia, indicating a positive market opportunity.  \n2. Management states they won’t move all production to Russia, which avoids over-concentration and geopolitical risk.  \n3. Maintaining diversified production locations reduces supply‐chain and sanction risks.  \n4. This prudent risk management alongside growth prospects is likely viewed favorably by investors.  \nAnswer and Confidence (0-100): C, 90%'}
+hint_entries:{'trail_0': ''}
+hint_multi_step_confs:{'trail_0': None}
+sample size: 3446
+real_answer:neutral
+predicted_answer:place_holder
+predicted_conf:place_holder
+hint_answers:{'trail_0': 'C'}
+hint_confs:{'trail_0': 90.0}
+hint_responses:{'trail_0': 'Explanation: \n1. The company is experiencing growth in Russia, indicating a positive market opportunity.  \n2. Management states they won’t move all production to Russia, which avoids over-concentration and geopolitical risk.  \n3. Maintaining diversified production locations reduces supply‐chain and sanction risks.  \n4. This prudent risk management alongside growth prospects is likely viewed favorably by investors.  \nAnswer and Confidence (0-100): C, 90%'}
+hint_entries:{'trail_0': ''}
+hint_multi_step_confs:{'trail_0': None}
