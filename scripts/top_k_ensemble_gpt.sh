@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #set this in bash terminal
-#export OPENAI_API_KEY=""
+#export OPENAI_API_KEY="""
 #echo $OPENAI_API_KEY
 
 
@@ -29,7 +29,7 @@ CONFIDENCE_TYPE="${PROMPT_TYPE}_${SAMPLING_TYPE}_${NUM_ENSEMBLE}"
 DATASET_NAME="ReutersNews"
 MODEL_NAME="o4-mini"
 TASK_TYPE="multi_choice_qa"
-DATASET_PATH="/content/drive/MyDrive/llm_trust/empirical_analysis/articles_subset1.csv"
+DATASET_PATH="/Users/minjiyoo/Documents/GitHub/llm-trust-issue/articles_subset1_1.csv"
 USE_COT=false # use cot or not
 TEMPERATURE=0.7
 TOP_K=3
@@ -40,6 +40,7 @@ TIME_STAMPE=$(date "+%m-%d-%H-%M")
 
 OUTPUT_DIR="final_output/$CONFIDENCE_TYPE/$MODEL_NAME/$DATASET_NAME"
 RESULT_FILE="$OUTPUT_DIR/${DATASET_NAME}_${MODEL_NAME}_${TIME_STAMPE}.json"
+# RESULT_FILE="final_output/top_k_self_random_5/o4-mini/ReutersNews/ReutersNews_o4-mini_07-11-23-30.json"
 USE_COT_FLAG=""
 
 if [ "$USE_COT" = true ] ; then

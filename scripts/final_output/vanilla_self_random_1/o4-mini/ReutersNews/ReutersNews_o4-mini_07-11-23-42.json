@@ -1,0 +1,233 @@
+{
+    "hyperparameters": {
+        "dataset_name": "ReutersNews",
+        "data_path": "/Users/minjiyoo/Documents/GitHub/llm-trust-issue/articles_subset1.csv",
+        "output_file": "final_output/vanilla_self_random_1/o4-mini/ReutersNews/ReutersNews_o4-mini_07-11-23-42.json",
+        "use_cot": false,
+        "model_name": "o4-mini",
+        "task_type": "multi_choice_qa",
+        "prompt_type": "vanilla",
+        "sampling_type": "self_random",
+        "num_ensemble": 1,
+        "temperature_for_ensemble": 0.0
+    },
+    "elapsed_time": "Elapsed time: 35.44 seconds",
+    "sample_tested": 16,
+    "error_count": 0,
+    "sample_prompt": {
+        "question": "U.S. Postal Service Honors 150th Anniversary of Emancipation Proclamation with Limited-Edition Stamp\nOptions: (A) negative  (B) neutral  (C) positive  ",
+        "hint": "",
+        "prompt": "Read the question, consider it from an investor's viewpoint, determining whether the news would positively, negatively, or neutrally influence the stock price. Provide your answer and your confidence in this answer.  Note: The confidence indicates how likely you think your answer is true.\nUse the following format to answer:\n```Answer and Confidence (0-100): [ONLY the option letter; not a complete sentence], [Your confidence level, please only include the numerical number in the range of 0-100]%```\nOnly the answer and confidence, don't give me the explanation.\n\nQuestion: U.S. Postal Service Honors 150th Anniversary of Emancipation Proclamation with Limited-Edition Stamp\nOptions: (A) negative  (B) neutral  (C) positive  \n"
+    },
+    "final_result": {
+        "U.S. Postal Service Honors 150th Anniversary of Emancipation Proclamation with Limited-Edition Stamp\nOptions: (A) negative  (B) neutral  (C) positive  ": {
+            "trail_0": {
+                "hint_response": "Answer and Confidence (0-100): C, 85%",
+                "real_answer": {
+                    "answer": "placeholder",
+                    "options": [
+                        "negative",
+                        "neutral",
+                        "positive"
+                    ]
+                }
+            }
+        },
+        "Oilfieldfinder Inc. is Drilling for Oil in West Texas, and the Oil Samples Are 98% Pure Crude\nOptions: (A) negative  (B) neutral  (C) positive  ": {
+            "trail_0": {
+                "hint_response": "Answer and Confidence (0-100): C, 90%",
+                "real_answer": {
+                    "answer": "placeholder",
+                    "options": [
+                        "negative",
+                        "neutral",
+                        "positive"
+                    ]
+                }
+            }
+        },
+        "Expats who bounce cheques may no longer risk prison in UAE\nOptions: (A) negative  (B) neutral  (C) positive  ": {
+            "trail_0": {
+                "hint_response": "Answer and Confidence (0-100): C, 75%",
+                "real_answer": {
+                    "answer": "placeholder",
+                    "options": [
+                        "negative",
+                        "neutral",
+                        "positive"
+                    ]
+                }
+            }
+        },
+        "Pope offers blessings for New Year\nOptions: (A) negative  (B) neutral  (C) positive  ": {
+            "trail_0": {
+                "hint_response": "Answer and Confidence (0-100): B, 60%",
+                "real_answer": {
+                    "answer": "placeholder",
+                    "options": [
+                        "negative",
+                        "neutral",
+                        "positive"
+                    ]
+                }
+            }
+        },
+        "CAR president urges rebels to let him finish his term\nOptions: (A) negative  (B) neutral  (C) positive  ": {
+            "trail_0": {
+                "hint_response": "Answer and Confidence (0-100): A, 60%",
+                "real_answer": {
+                    "answer": "placeholder",
+                    "options": [
+                        "negative",
+                        "neutral",
+                        "positive"
+                    ]
+                }
+            }
+        },
+        "Portuguese president sends tax rises to Constitutional Court\nOptions: (A) negative  (B) neutral  (C) positive  ": {
+            "trail_0": {
+                "hint_response": "Answer and Confidence (0-100): C, 60%",
+                "real_answer": {
+                    "answer": "placeholder",
+                    "options": [
+                        "negative",
+                        "neutral",
+                        "positive"
+                    ]
+                }
+            }
+        },
+        "US House preparing to vote on Senate 'fiscal cliff' bill -Democrat Hastings\nOptions: (A) negative  (B) neutral  (C) positive  ": {
+            "trail_0": {
+                "hint_response": "Answer and Confidence (0-100): C, 70%",
+                "real_answer": {
+                    "answer": "placeholder",
+                    "options": [
+                        "negative",
+                        "neutral",
+                        "positive"
+                    ]
+                }
+            }
+        },
+        "US Senate's 'fiscal cliff' bill packed with sweeteners\nOptions: (A) negative  (B) neutral  (C) positive  ": {
+            "trail_0": {
+                "hint_response": "Answer and Confidence (0-100): C, 70%",
+                "real_answer": {
+                    "answer": "placeholder",
+                    "options": [
+                        "negative",
+                        "neutral",
+                        "positive"
+                    ]
+                }
+            }
+        },
+        "US House to vote on Senate 'fiscal cliff' bill Tuesday night -aide\nOptions: (A) negative  (B) neutral  (C) positive  ": {
+            "trail_0": {
+                "hint_response": "Answer and Confidence (0-100): B, 70%",
+                "real_answer": {
+                    "answer": "placeholder",
+                    "options": [
+                        "negative",
+                        "neutral",
+                        "positive"
+                    ]
+                }
+            }
+        },
+        "Australia shares rise to 19-month high on U.S. fiscal talks\nOptions: (A) negative  (B) neutral  (C) positive  ": {
+            "trail_0": {
+                "hint_response": "Answer and Confidence (0-100): C, 90%",
+                "real_answer": {
+                    "answer": "placeholder",
+                    "options": [
+                        "negative",
+                        "neutral",
+                        "positive"
+                    ]
+                }
+            }
+        },
+        "FitnessFind.ca: The New Way to Find Your Fitness\nOptions: (A) negative  (B) neutral  (C) positive  ": {
+            "trail_0": {
+                "hint_response": "Answer and Confidence (0-100): B, 70%",
+                "real_answer": {
+                    "answer": "placeholder",
+                    "options": [
+                        "negative",
+                        "neutral",
+                        "positive"
+                    ]
+                }
+            }
+        },
+        "UK's Metro Bank appoints Vernon Hill as new chair\nOptions: (A) negative  (B) neutral  (C) positive  ": {
+            "trail_0": {
+                "hint_response": "Answer and Confidence (0-100): C, 65%",
+                "real_answer": {
+                    "answer": "placeholder",
+                    "options": [
+                        "negative",
+                        "neutral",
+                        "positive"
+                    ]
+                }
+            }
+        },
+        "Support the Imperfect Budget Deal\nOptions: (A) negative  (B) neutral  (C) positive  ": {
+            "trail_0": {
+                "hint_response": "Answer and Confidence (0-100): C, 80%",
+                "real_answer": {
+                    "answer": "placeholder",
+                    "options": [
+                        "negative",
+                        "neutral",
+                        "positive"
+                    ]
+                }
+            }
+        },
+        "STOCKS NEWS SINGAPORE-OCBC ups CityDev target price\nOptions: (A) negative  (B) neutral  (C) positive  ": {
+            "trail_0": {
+                "hint_response": "Answer and Confidence (0-100): C, 90%",
+                "real_answer": {
+                    "answer": "placeholder",
+                    "options": [
+                        "negative",
+                        "neutral",
+                        "positive"
+                    ]
+                }
+            }
+        },
+        "Maryland ushers in New Year with its first gay marriages\nOptions: (A) negative  (B) neutral  (C) positive  ": {
+            "trail_0": {
+                "hint_response": "Answer and Confidence (0-100): B, 90%",
+                "real_answer": {
+                    "answer": "placeholder",
+                    "options": [
+                        "negative",
+                        "neutral",
+                        "positive"
+                    ]
+                }
+            }
+        },
+        "Kirkuk attacks kill security, civilians\nOptions: (A) negative  (B) neutral  (C) positive  ": {
+            "trail_0": {
+                "hint_response": "Answer and Confidence (0-100): A, 85%",
+                "real_answer": {
+                    "answer": "placeholder",
+                    "options": [
+                        "negative",
+                        "neutral",
+                        "positive"
+                    ]
+                }
+            }
+        }
+    },
+    "error_dataset": {}
+}
