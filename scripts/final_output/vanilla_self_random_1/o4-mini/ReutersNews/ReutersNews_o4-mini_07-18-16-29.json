@@ -1,0 +1,168 @@
+{
+    "hyperparameters": {
+        "dataset_name": "ReutersNews",
+        "data_path": "/Users/minjiyoo/Documents/GitHub/llm-trust-issue/articles_subset5.csv",
+        "output_file": "final_output/vanilla_self_random_1/o4-mini/ReutersNews/ReutersNews_o4-mini_07-18-16-29.json",
+        "use_cot": false,
+        "model_name": "o4-mini",
+        "task_type": "multi_choice_qa",
+        "prompt_type": "vanilla",
+        "sampling_type": "self_random",
+        "num_ensemble": 1,
+        "temperature_for_ensemble": 0.0
+    },
+    "elapsed_time": "Elapsed time: 32.84 seconds",
+    "sample_tested": 11,
+    "error_count": 0,
+    "sample_prompt": {
+        "question": "Torstar Corporation to Report 2013 Fourth Quarter Results\nOptions: (A) negative  (B) neutral  (C) positive  ",
+        "hint": "",
+        "prompt": "Read the question, consider it from an investor's viewpoint, determining whether the news would positively, negatively, or neutrally influence the stock price. Provide your answer and your confidence in this answer.  Note: The confidence indicates how likely you think your answer is true.\nUse the following format to answer:\n```Answer and Confidence (0-100): [ONLY the option letter; not a complete sentence], [Your confidence level, please only include the numerical number in the range of 0-100]%```\nOnly the answer and confidence, don't give me the explanation.\n\nQuestion: Torstar Corporation to Report 2013 Fourth Quarter Results\nOptions: (A) negative  (B) neutral  (C) positive  \n"
+    },
+    "final_result": {
+        "Torstar Corporation to Report 2013 Fourth Quarter Results\nOptions: (A) negative  (B) neutral  (C) positive  ": {
+            "trail_0": {
+                "hint_response": "Answer and Confidence (0-100): B, 90%",
+                "real_answer": {
+                    "answer": "placeholder",
+                    "options": [
+                        "negative",
+                        "neutral",
+                        "positive"
+                    ]
+                }
+            }
+        },
+        "Ipsen says to seek approval for muscle-spasm drug\nOptions: (A) negative  (B) neutral  (C) positive  ": {
+            "trail_0": {
+                "hint_response": "Answer and Confidence (0-100): C, 70%",
+                "real_answer": {
+                    "answer": "placeholder",
+                    "options": [
+                        "negative",
+                        "neutral",
+                        "positive"
+                    ]
+                }
+            }
+        },
+        "Power market coupling boosts chance of UK-Norway cable -Statnett\nOptions: (A) negative  (B) neutral  (C) positive  ": {
+            "trail_0": {
+                "hint_response": "Answer and Confidence (0-100): C, 75%",
+                "real_answer": {
+                    "answer": "placeholder",
+                    "options": [
+                        "negative",
+                        "neutral",
+                        "positive"
+                    ]
+                }
+            }
+        },
+        "Disney earnings rise on ESPN growth, 'Frozen'\nOptions: (A) negative  (B) neutral  (C) positive  ": {
+            "trail_0": {
+                "hint_response": "Answer and Confidence (0-100): C, 95%",
+                "real_answer": {
+                    "answer": "placeholder",
+                    "options": [
+                        "negative",
+                        "neutral",
+                        "positive"
+                    ]
+                }
+            }
+        },
+        "\"Dark Side of Sunset Pointe, A Lance Underphal Mystery\" Holds Tight Grip on Readers Through Intense Plot Twists\nOptions: (A) negative  (B) neutral  (C) positive  ": {
+            "trail_0": {
+                "hint_response": "Answer and Confidence (0-100): C, 60%",
+                "real_answer": {
+                    "answer": "placeholder",
+                    "options": [
+                        "negative",
+                        "neutral",
+                        "positive"
+                    ]
+                }
+            }
+        },
+        "United Nations thanks Hollywood amid fight to save Syria's heritage\nOptions: (A) negative  (B) neutral  (C) positive  ": {
+            "trail_0": {
+                "hint_response": "Answer and Confidence (0-100): B, 85%",
+                "real_answer": {
+                    "answer": "placeholder",
+                    "options": [
+                        "negative",
+                        "neutral",
+                        "positive"
+                    ]
+                }
+            }
+        },
+        "NASDAQ OMX Announces Quarterly Dividend of $0.13 Per Share\nOptions: (A) negative  (B) neutral  (C) positive  ": {
+            "trail_0": {
+                "hint_response": "Answer and Confidence (0-100): C, 75%",
+                "real_answer": {
+                    "answer": "placeholder",
+                    "options": [
+                        "negative",
+                        "neutral",
+                        "positive"
+                    ]
+                }
+            }
+        },
+        "Koodo Mobile Signs Exclusive Global Rights Deal for El Tabador, Koodo's Iconic Animated Character, for a TV Sitcom to be Developed by Camillion Corp.\nOptions: (A) negative  (B) neutral  (C) positive  ": {
+            "trail_0": {
+                "hint_response": "Answer and Confidence (0-100): C, 70%",
+                "real_answer": {
+                    "answer": "placeholder",
+                    "options": [
+                        "negative",
+                        "neutral",
+                        "positive"
+                    ]
+                }
+            }
+        },
+        "Bischoff Hervey Entertainment Television (BHE TV) And Paul B. Anderson Media Agent, Inc. Partner To Jointly Develop And Produce Radio Talk Platform As Hosting Vehicle For Eric Bischoff\nOptions: (A) negative  (B) neutral  (C) positive  ": {
+            "trail_0": {
+                "hint_response": "Answer and Confidence (0-100): B, 60%",
+                "real_answer": {
+                    "answer": "placeholder",
+                    "options": [
+                        "negative",
+                        "neutral",
+                        "positive"
+                    ]
+                }
+            }
+        },
+        "CORRECTED-Insurer Prudential Financial posts wider loss\nOptions: (A) negative  (B) neutral  (C) positive  ": {
+            "trail_0": {
+                "hint_response": "Answer and Confidence (0-100): A, 90%",
+                "real_answer": {
+                    "answer": "placeholder",
+                    "options": [
+                        "negative",
+                        "neutral",
+                        "positive"
+                    ]
+                }
+            }
+        },
+        "Telecom Italia Media, L'Espresso multiplex deal seen within weeks\nOptions: (A) negative  (B) neutral  (C) positive  ": {
+            "trail_0": {
+                "hint_response": "Answer and Confidence (0-100): C, 70%",
+                "real_answer": {
+                    "answer": "placeholder",
+                    "options": [
+                        "negative",
+                        "neutral",
+                        "positive"
+                    ]
+                }
+            }
+        }
+    },
+    "error_dataset": {}
+}
