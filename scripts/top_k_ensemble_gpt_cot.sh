@@ -27,13 +27,22 @@ CONFIDENCE_TYPE="${PROMPT_TYPE}_${SAMPLING_TYPE}_${NUM_ENSEMBLE}"
 # TOP_K=3
 
 
-DATASET_NAME="ReutersNews"
-MODEL_NAME="chatgpt"
+# DATASET_NAME="ReutersNews"
+# MODEL_NAME="chatgpt"
+# TASK_TYPE="multi_choice_qa"
+# DATASET_PATH="C:/Users/minjiyoo/Desktop/llm-uncertainty/articles_subset7.csv"
+# USE_COT=true # use cot or not
+# TEMPERATURE=0.7
+# TOP_K=3
+
+DATASET_NAME="Financial_PhraseBank"
+MODEL_NAME="o4-mini"
 TASK_TYPE="multi_choice_qa"
-DATASET_PATH="C:/Users/minjiyoo/Desktop/llm-uncertainty/articles_subset7.csv"
-USE_COT=true # use cot or not
+DATASET_PATH="/Users/minjiyoo/Documents/GitHub/llm-trust-issue/bank1.csv"
+USE_COT=false # use cot or not
 TEMPERATURE=0.7
 TOP_K=3
+
 
 
 #############################################################

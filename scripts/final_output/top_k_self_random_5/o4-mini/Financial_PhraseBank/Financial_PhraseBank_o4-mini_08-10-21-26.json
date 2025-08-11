@@ -1,0 +1,83 @@
+{
+    "hyperparameters": {
+        "dataset_name": "Financial_PhraseBank",
+        "data_path": "/Users/minjiyoo/Documents/GitHub/llm-trust-issue/bank1.csv",
+        "output_file": "final_output/top_k_self_random_5/o4-mini/Financial_PhraseBank/Financial_PhraseBank_o4-mini_08-10-21-26.json",
+        "use_cot": false,
+        "model_name": "o4-mini",
+        "task_type": "multi_choice_qa",
+        "prompt_type": "top_k",
+        "num_K": 3,
+        "sampling_type": "self_random",
+        "num_ensemble": 5,
+        "temperature_for_ensemble": 0.7
+    },
+    "elapsed_time": "Elapsed time: 10284.70 seconds",
+    "sample_tested": 1,
+    "error_count": 0,
+    "sample_prompt": {
+        "question": "According to Gran , the company has no plans to move all production to Russia , although that is where the company is growing .\nOptions: (A) negative  (B) neutral  (C) positive  ",
+        "hint": "Hint: I think the answer should be C",
+        "prompt": "Provide your 3 best guesses and the probability that each is correct (0% to 100%) for the following question. Note that you need to consider it from an investor's viewpoint, determining whether the news would positively, negatively, or neutrally influence the stock price. Give ONLY the option letter of your guesses and probabilities, no other words or explanation. For example:\nG1: <ONLY the option letter of first most likely guess; not a complete sentence, just the guess!>\nP1: <ONLY the probability that G1 is correct, without any extra commentary whatsoever; just the probability!>\n...\nG3: <ONLY the option letter of 3-th most likely guess>\nP3: <ONLY the probability that G3 is correct, without any extra commentary whatsoever; just the probability!>\n\nNote that the hint is only for your reference. Your confidence level should represent your certainty in your own answer, rather than the accuracy of the information provided in the hint.\nQuestion: According to Gran , the company has no plans to move all production to Russia , although that is where the company is growing .\nOptions: (A) negative  (B) neutral  (C) positive  \nHint: I think the answer should be C"
+    },
+    "final_result": {
+        "According to Gran , the company has no plans to move all production to Russia , although that is where the company is growing .\nOptions: (A) negative  (B) neutral  (C) positive  ": {
+            "trail_0": {
+                "hint_response": "G1: B  \nP1: 70%  \nG2: C  \nP2: 20%  \nG3: A  \nP3: 10%",
+                "real_answer": {
+                    "answer": "neutral",
+                    "options": [
+                        "negative",
+                        "neutral",
+                        "positive"
+                    ]
+                }
+            },
+            "trail_1": {
+                "hint_response": "G1: B  \nP1: 60%  \nG2: C  \nP2: 30%  \nG3: A  \nP3: 10%",
+                "real_answer": {
+                    "answer": "neutral",
+                    "options": [
+                        "negative",
+                        "neutral",
+                        "positive"
+                    ]
+                }
+            },
+            "trail_2": {
+                "hint_response": "G1: B  \nP1: 70%  \nG2: C  \nP2: 20%  \nG3: A  \nP3: 10%",
+                "real_answer": {
+                    "answer": "neutral",
+                    "options": [
+                        "negative",
+                        "neutral",
+                        "positive"
+                    ]
+                }
+            },
+            "trail_3": {
+                "hint_response": "G1: B\nP1: 60%\nG2: C\nP2: 30%\nG3: A\nP3: 10%",
+                "real_answer": {
+                    "answer": "neutral",
+                    "options": [
+                        "negative",
+                        "neutral",
+                        "positive"
+                    ]
+                }
+            },
+            "trail_4": {
+                "hint_response": "G1: B  \nP1: 70%  \nG2: C  \nP2: 20%  \nG3: A  \nP3: 10%",
+                "real_answer": {
+                    "answer": "neutral",
+                    "options": [
+                        "negative",
+                        "neutral",
+                        "positive"
+                    ]
+                }
+            }
+        }
+    },
+    "error_dataset": {}
+}

@@ -1,0 +1,98 @@
+{
+    "hyperparameters": {
+        "input_file": "final_output/top_k_self_random_5/o4-mini/Financial_PhraseBank/Financial_PhraseBank_o4-mini_08-10-21-26.json",
+        "use_cot": false,
+        "model_name": "o4-mini",
+        "dataset_name": "Financial_PhraseBank",
+        "task_type": "multi_choice_qa",
+        "prompt_type": "top_k",
+        "num_K": 3,
+        "sampling_type": "self_random",
+        "num_ensemble": 5
+    },
+    "sample_tested": 1,
+    "error_count": 0,
+    "processed_data": {
+        "According to Gran , the company has no plans to move all production to Russia , although that is where the company is growing .\nOptions: (A) negative  (B) neutral  (C) positive  ": {
+            "real_answer": "neutral",
+            "predicted_answer": "place_holder",
+            "predicted_conf": "place_holder",
+            "hint_answers": {
+                "trail_0": {
+                    "0": "B",
+                    "1": "C",
+                    "2": "A"
+                },
+                "trail_1": {
+                    "0": "B",
+                    "1": "C",
+                    "2": "A"
+                },
+                "trail_2": {
+                    "0": "B",
+                    "1": "C",
+                    "2": "A"
+                },
+                "trail_3": {
+                    "0": "B",
+                    "1": "C",
+                    "2": "A"
+                },
+                "trail_4": {
+                    "0": "B",
+                    "1": "C",
+                    "2": "A"
+                }
+            },
+            "hint_confs": {
+                "trail_0": {
+                    "0": 70.0,
+                    "1": 20.0,
+                    "2": 10.0
+                },
+                "trail_1": {
+                    "0": 60.0,
+                    "1": 30.0,
+                    "2": 10.0
+                },
+                "trail_2": {
+                    "0": 70.0,
+                    "1": 20.0,
+                    "2": 10.0
+                },
+                "trail_3": {
+                    "0": 60.0,
+                    "1": 30.0,
+                    "2": 10.0
+                },
+                "trail_4": {
+                    "0": 70.0,
+                    "1": 20.0,
+                    "2": 10.0
+                }
+            },
+            "hint_responses": {
+                "trail_0": "G1: B  \nP1: 70%  \nG2: C  \nP2: 20%  \nG3: A  \nP3: 10%",
+                "trail_1": "G1: B  \nP1: 60%  \nG2: C  \nP2: 30%  \nG3: A  \nP3: 10%",
+                "trail_2": "G1: B  \nP1: 70%  \nG2: C  \nP2: 20%  \nG3: A  \nP3: 10%",
+                "trail_3": "G1: B\nP1: 60%\nG2: C\nP2: 30%\nG3: A\nP3: 10%",
+                "trail_4": "G1: B  \nP1: 70%  \nG2: C  \nP2: 20%  \nG3: A  \nP3: 10%"
+            },
+            "hint_entries": {
+                "trail_0": "",
+                "trail_1": "",
+                "trail_2": "",
+                "trail_3": "",
+                "trail_4": ""
+            },
+            "hint_multi_step_confs": {
+                "trail_0": null,
+                "trail_1": null,
+                "trail_2": null,
+                "trail_3": null,
+                "trail_4": null
+            }
+        }
+    },
+    "error_questions": {}
+}
