@@ -39,7 +39,7 @@ DATASET_NAME="Financial_PhraseBank"
 MODEL_NAME="o4-mini"
 TASK_TYPE="multi_choice_qa"
 DATASET_PATH="/Users/minjiyoo/Documents/GitHub/llm-trust-issue/bank1.csv"
-USE_COT=false # use cot or not
+USE_COT=true # use cot or not
 TEMPERATURE=0.7
 TOP_K=3
 
